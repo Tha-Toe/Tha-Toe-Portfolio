@@ -1,0 +1,23 @@
+.nContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navList {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.logoImg {
+    width: 100px;
+    border-radius: 60px;
+}
+
+.navChild {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 17px;
+}
