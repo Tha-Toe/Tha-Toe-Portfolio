@@ -1,0 +1,57 @@
+.aboutContainer {
+    color: #fff;
+    font-family: Segoe Script;
+    font-family: Century Gothic;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+}
+.myPhoto {
+    width: 450px;
+    border-top: 10px solid #29fcdc;
+    background-color: #2b2b2b;
+    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+}
+.rightAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    background-color: #2b2b2b;
+    padding: 25px;
+    border-top: 10px solid #29fcdc;
+    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+}
+.aboutHead {
+    color: #29FCDC;
+    font-size: 20px;
+}
+
+.aboutMe {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.cvButton {
+    background-color: #29fcdc;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 550;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.cvLink {
+    color: #2b2b2b;
+    text-decoration: none;
+}

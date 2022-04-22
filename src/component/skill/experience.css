@@ -1,0 +1,201 @@
+.experienceContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.eLeftContainer {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: #2b2b2b;
+    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+    border-top: 10px solid #D81E5B;
+}
+
+.eLeftAnimation {
+    animation: eLeft .5s ease-in;
+    position: relative;
+}
+
+@keyframes eLeft {
+    0%{opacity: 0; transform: translateX(-200px);}
+    60%{opacity: 1;transform: translateX(0);}
+    80%{transform: translateX(20px)}
+    100%{transform: translateX(0)}
+}
+
+.eleftHeader {
+    font-size: 27px;
+    font-weight: 600;
+    font-family: Century Gothic;
+    color: #D81E5B;
+    margin-bottom: 30px;
+}
+
+.eleftNote {
+    font-size: 18px;
+    color: #fff;
+    width: 90%;
+    margin-top: 20px;
+    font-family: Century Gothic;
+}
+
+.firstE {
+    color: #ffff;
+}
+.secondE {
+    color: #fff;
+}
+.thirdE{
+    color: #fff;
+}
+
+.eRightContainer {
+    width: 40%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.skillContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    font-family: Century Gothic;
+}
+
+.skillHeader {
+    color: #D81E5B;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: Century Gothic;
+}
+.skillName {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.progressContainer {
+    width: 400px;
+    background-color: #4b4b4b;
+    height: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.progressBar {
+    height: 100%;
+    border-radius: 5px;
+}
+.progressLogoPink {
+    color: #D81E5B;
+    font-weight: 600;
+    font-family: Century Gothic;
+    cursor: pointer;
+}
+.progressLogoBlue {
+    color: #29fcdc;
+    font-weight: 600;
+    font-family: Century Gothic;
+    cursor: pointer;
+}
+
+.progressLogoAnimation {
+    animation: planimation 2s ease-in;
+}
+
+@keyframes planimation {
+    from{left: 0%;}
+}
+
+.skillAnimation {
+    animation: sanimation 2s ease-in;
+}
+
+@keyframes sanimation {
+    from{width: 0%;}
+}
+
+.skillOne {
+    color: #D81E5B;
+
+}
+.skillOneBar{
+    background: linear-gradient(to left, #D81E5B,  #D7CF07);
+    width: 90%;
+}
+
+.skillTwo {
+    color: #29fcdc;
+}
+.skillTwoBar{
+    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
+    width: 80%;
+}
+
+.skillThree {
+    color: #D81E5B;
+}
+.skillThreeBar{
+    background: linear-gradient(to left, #D81E5B,  #D7CF07);
+    width: 80%;
+}
+
+.skillFour {
+    color: #29fcdc;
+}
+.skillFourBar{
+    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
+    width: 75%;
+}
+
+.skillFive {
+    color: #D81E5B;
+}
+.skillFiveBar{
+    background: linear-gradient(to left, #D81E5B,  #D7CF07);
+    width: 80%;
+}
+
+.skillSix {
+    color: #29fcdc;
+}
+.skillSixBar{
+    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
+    width: 20%;
+}
+
+.skillSeven {
+    color: #de1e5b;
+}
+.skillSevenBar{
+    background: linear-gradient(to left, #D81E5B,  #D7CF07);
+    width: 15%;
+}
+
+.skillEight {
+    color: #29fcdc;
+}
+.skillEightBar{
+    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
+    width: 20%;
+}

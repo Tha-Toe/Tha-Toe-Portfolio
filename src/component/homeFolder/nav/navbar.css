@@ -1,0 +1,40 @@
+.nContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 5%;
+    z-index: 3;
+    background-color: rgba(38, 38, 38, 0.9);
+    border-bottom: 1px solid #D81E5B;
+}
+
+.navList {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.logoImg {
+    width: 70px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.navChild {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.navChild:hover{
+    color: #29fcdc;
+}
+.navChild:active {
+    color: #29fcdc;
+}

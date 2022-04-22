@@ -1,0 +1,109 @@
+.mContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20%;
+}
+.leftMContainer {
+
+}
+.mNote {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 15px;
+}
+.firstLine, .secondLine, .thirdLine {
+    display: flex;
+    flex-direction: row;
+}
+
+.first{
+    font-size: 70px;
+    font-weight: 500;
+}
+.second, .firstHi {
+    font-size: 70px;
+    font-weight: 600;
+}
+.third {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+
+
+.e {
+    display: inline-block;
+}
+
+.noteVisible {
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+/*    animation: nvisible .5s  ease-in-out; */
+/*    animation-delay: calc(0.05s * var(--i)); */
+    color: #fff;
+}
+.noteVisible:hover {
+    color: #29fcdc;
+    display: inline-block;
+    position: relative;
+    transform: scaleX(1.1) scaleY(.8) translateY(50px) rotate(30deg);
+    transition: transform .2s ease;
+}
+
+/*
+@keyframes nvisible {
+    0%{transform:  scaleX(0) scaleY(0) rotate(-20deg); opacity: 0;}
+    20%{transform: scaleX(1.2) scaleY(.6) rotate(0deg); opacity: .4;}
+    40%{transform: scaleX(.9) scaleY(1.1) rotate(0deg); opacity: .8;}
+    60%{transform: scaleX(1.1) scaleY(.9) rotate(0deg); opacity: 1;}
+    80%{transform: scaleX(.9) scaleY(1.1) rotate(0deg); opacity: 1;}
+    100%{transform: scaleX(1) scaleY(1) rotate(0deg); opacity: 1;}
+}
+*/
+
+.rightMContainer {
+    width: 400px;
+}
+.rightMContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.one,.two,.three,.four,.five,.six,.seven {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.one{
+    background-color: #F40000;
+    box-shadow: 1px 1px 20px -3px #F40000;
+}
+.two{
+    background-color: #F75200;
+    box-shadow: 1px 1px 20px -3px #F75200;
+}
+.three{
+    background-color: #F7E92D;
+    box-shadow: 1px 1px 20px -3px #F7E92D;
+}
+.four{
+    background-color: #00B700;
+    box-shadow: 1px 1px 20px -3px #00B700;
+}
+.five{
+    background-color: #0097F7;
+    box-shadow: 1px 1px 20px -3px #0097F7;
+}
+.six{
+    background-color: #000080;
+    box-shadow: 1px 1px 20px -3px #000080;
+}
+.seven{
+    background-color: #8100E2;
+    box-shadow: 1px 1px 20px -3px #8100E2;
+}
+

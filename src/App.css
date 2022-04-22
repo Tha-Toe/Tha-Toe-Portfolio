@@ -1,5 +1,5 @@
 body {
-    background-color: #1D1D1D;
+    background-color: #262626;
 }
 
 .bodyContainer{
@@ -7,4 +7,21 @@ body {
 }
 .white {
     color: #fff;
+}
+
+
+.scrollLeft{
+    position: absolute;
+    left: 0;
+    top: 80%;
+    color: #fff;
+    font-family: Lucida Handwriting;
+}
+
+.scrollRight{
+    position: absolute;
+    right: 0;
+    top: 80%;
+    color: #fff;
+    font-family: Lucida Handwriting;
 }
