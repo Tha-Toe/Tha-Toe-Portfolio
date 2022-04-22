@@ -5,7 +5,6 @@
     padding-top: 20%;
 }
 .leftMContainer {
-
 }
 .mNote {
     font-family: 'Montserrat', sans-serif;
@@ -40,8 +39,7 @@
     margin-left: 3px;
     display: inline-block;
     position: relative;
-/*    animation: nvisible .5s  ease-in-out; */
-/*    animation-delay: calc(0.05s * var(--i)); */
+
     color: #fff;
 }
 .noteVisible:hover {
@@ -52,16 +50,6 @@
     transition: transform .2s ease;
 }
 
-/*
-@keyframes nvisible {
-    0%{transform:  scaleX(0) scaleY(0) rotate(-20deg); opacity: 0;}
-    20%{transform: scaleX(1.2) scaleY(.6) rotate(0deg); opacity: .4;}
-    40%{transform: scaleX(.9) scaleY(1.1) rotate(0deg); opacity: .8;}
-    60%{transform: scaleX(1.1) scaleY(.9) rotate(0deg); opacity: 1;}
-    80%{transform: scaleX(.9) scaleY(1.1) rotate(0deg); opacity: 1;}
-    100%{transform: scaleX(1) scaleY(1) rotate(0deg); opacity: 1;}
-}
-*/
 
 .rightMContainer {
     width: 400px;
@@ -107,3 +95,55 @@
     box-shadow: 1px 1px 20px -3px #8100E2;
 }
 
+@media (max-width: 1005px) {
+    .mContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20%;
+    }
+    .leftMContainer {
+        width: 90%;
+    }
+    .rightMContainer{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .first{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .second, .firstHi {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .third {
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+@media (max-width: 500px) {
+    .first{
+        font-size: 40px;
+        font-weight: 450;
+    }
+    .second, .firstHi {
+        font-size: 40px;
+        font-weight: 550;
+    }
+    .third {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .rightMContainer {
+        width: 70%;
+    }
+    .one,.two,.three,.four,.five,.six,.seven {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import {motion} from "framer-motion"
 
@@ -12,7 +12,7 @@ const containerVariant = {
         y: 0,
         transition: {
             type: 'spring',
-            stiffness: 200,
+            stiffness: 300,
             duration: .5,
             delay: 6,
         }
@@ -39,36 +39,100 @@ const navVariant = {
     }
 }
 
+const humbagarVariant = {
+    initial: {
+        opacity: 0,
+        y: -200,
+    },
+    animate: {
+        opacity: 1,
+        y: 0,        
+        transition: {
+            duration: 1,
+            type: "spring",
+            stiffness: 300,
+            delay: 6,
+        }
+    }
+}
+
 function Navbar () {
+
+
+    const [menuOpen,setMenuOpen] = useState(false);
+
 
     const refreshPage = () => {
         window.location.reload(true);
     }
 
+    useEffect(() => {
+
+    },[])
+
     return(
-        <motion.div className="nContainer white"
-            variants={containerVariant}
-            initial="hidden"
-            animate="containerVisible"
-        >
-            <div className="tLogo">
-                <motion.img src="/myLogo.png" className="logoImg"
-                    variants={logoVariant}
-                    animate="animate"
-                    onClick={refreshPage}
-                    whileHover={{
-                        scale: 1.1,
-                    }}
-                />
+        <>
+            <motion.div className="nContainer white"
+                variants={containerVariant}
+                initial="hidden"
+                animate="containerVisible"
+            >
+                <div className="tLogo">
+                    <motion.img src="/myLogo.png" className="logoImg"
+                        variants={logoVariant}
+                        animate="animate"
+                        onClick={refreshPage}
+                        whileHover={{
+                            scale: 1.1,
+                        }}
+                    />
+                </div>
+                <div className="navList">
+                    <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#home">Home</motion.a>
+                    <motion.a className="navChild" variants={navVariant} whileHover="hover"href="#about">About</motion.a>
+                    <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#project">Project</motion.a>
+                    <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#skill">Skill</motion.a>
+                    <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#contact">Contact Me</motion.a>
+                </div>
+            </motion.div>
+            <motion.div className="tLogo"
+                                variants={containerVariant}
+                                initial="hidden"
+                                animate="containerVisible"
+            >
+                        <motion.img src="/myLogo.png" className="logoImg"
+                            variants={logoVariant}
+                            animate="animate"
+                            onClick={refreshPage}
+                            whileHover={{
+                                scale: 1.1,
+                            }}
+                        />
+            </motion.div>
+            <motion.div className="humbagarContainer"
+                                variants={humbagarVariant}
+                                animate="animate"
+                                initial="initial"
+                                onClick={() => setMenuOpen(!menuOpen)}
+            >
+                <motion.div className={`${"stick"} ${menuOpen? "stickOne" : ""}`}></motion.div>
+                <motion.div className={`${"stick"} ${menuOpen? "stickTwo" : ""}`}></motion.div>
+                <motion.div className={`${"stick"} ${menuOpen? "stickThree" : ""}`}></motion.div>
+            </motion.div>
+            <div className={`${"menuContainer"} ${menuOpen? "menuActive":"menuHide"}`}>
+                <div className={`${"menuStatic"} ${menuOpen? "menuAnimate" : ""}`}>
+                    <img src="/myLogo.png" className="menulogoImg"/>
+                    <div className="webDeveloper">Web Developer(front end)</div>
+                    <div className="humbagarListContainer">
+                        <a className="humbagarList" href="#home">Home</a>
+                        <a className="humbagarList" href="#about">About</a>
+                        <a className="humbagarList" href="#project">Project</a>
+                        <a className="humbagarList" href="#skill">Skill</a>
+                        <a className="humbagarList" href="#contact">Contact</a>
+                    </div>
+                </div>
             </div>
-            <div className="navList">
-                <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#home">Home</motion.a>
-                <motion.a className="navChild" variants={navVariant} whileHover="hover"href="#about">About</motion.a>
-                <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#project">Project</motion.a>
-                <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#skill">Skill</motion.a>
-                <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#contact">Contact Me</motion.a>
-            </div>
-        </motion.div>
+        </>
     )
 }
 export default Navbar;

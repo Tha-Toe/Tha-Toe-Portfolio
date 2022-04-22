@@ -55,3 +55,42 @@
     color: #2b2b2b;
     text-decoration: none;
 }
+
+@media (max-width: 1005px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: auto;
+    }
+    .myPhoto {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .myPhoto {
+        width: 350px;
+    }
+    .rightAbout {
+        width: 400px;
+    }
+
+}
+@media (max-width: 500px) {
+    .myPhoto {
+        width: 250px;
+    }
+    .rightAbout {
+    width: 300px;
+    padding: 20px;
+    }
+}
+@media (max-width: 350px) {
+    .myPhoto {
+        width: 200px;
+    }
+    .rightAbout {
+        width: 200px;
+    }
+}

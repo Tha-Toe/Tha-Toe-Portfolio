@@ -6,10 +6,14 @@
     position: fixed;
     width: 90%;
     top: 0;
-    left: 5%;
     z-index: 3;
     background-color: rgba(38, 38, 38, 0.9);
     border-bottom: 1px solid #D81E5B;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
 .navList {
@@ -37,4 +41,120 @@
 }
 .navChild:active {
     color: #29fcdc;
+}
+.humbagarContainer {
+    display: none;
+}
+
+.menuContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2b2b2b;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transition: all .5s ease-in;
+    user-select: none;
+    opacity: 0;
+}
+.menuStatic {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: translateY(50px);
+    transition: all .5s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuAnimate {
+    transform: translateY(0px);
+}
+
+.menulogoImg {
+    width: 100px;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.menuHide {
+    opacity: 0;
+    z-index: -1;
+}
+
+.menuActive {
+    opacity: 1;
+}
+.webDeveloper {
+    color: #D81E5B;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+.humbagarListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.humbagarList {
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 300px;
+    border-bottom: 1px solid #29fcdc;
+}
+.humbagarList:hover{
+    color: #29fcdc;
+}
+.humbagarList:active {
+    color: #29fcdc;
+}
+
+@media (max-width: 1005px) {
+    .nContainer {
+        display: none;
+    }
+    .logoImg {
+        width: 70px;
+        border-radius: 60px;
+        cursor: pointer;
+    }
+    .humbagarContainer{
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 4;
+    }
+    .stick{
+        width: 30px;
+        height: 3px;
+        background-color: #29fcdc;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+    .stickOne {
+        transform: rotate(45deg) translate(4px,5px);
+    }
+
+    .stickTwo {
+        opacity: 0;
+    }
+
+    .stickThree {
+        transform: rotate(-45deg) translate(5px,-7px);
+    }
+}
+
+@media (max-width: 600px) {
+    .humbagarList {
+        font-weight: 600;
+        font-size: 17px;
+        padding: 20px 200px;
+   }
 }
