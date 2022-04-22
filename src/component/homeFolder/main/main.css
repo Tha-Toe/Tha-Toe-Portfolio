@@ -3,6 +3,11 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .leftMContainer {
 }
@@ -136,6 +141,28 @@
     }
     .third {
         font-size: 30px;
+        font-weight: 400;
+    }
+    .rightMContainer {
+        width: 70%;
+    }
+    .one,.two,.three,.four,.five,.six,.seven {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .first{
+        font-size: 30px;
+        font-weight: 450;
+    }
+    .second, .firstHi {
+        font-size: 30px;
+        font-weight: 550;
+    }
+    .third {
+        font-size: 25px;
         font-weight: 400;
     }
     .rightMContainer {
