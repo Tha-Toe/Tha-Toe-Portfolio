@@ -95,7 +95,7 @@ function Navbar () {
                     <motion.a className="navChild" variants={navVariant} whileHover="hover" href="#contact">Contact Me</motion.a>
                 </div>
             </motion.div>
-            <motion.div className="tLogo"
+            <motion.div className="tMobileLogo"
                                 variants={containerVariant}
                                 initial="hidden"
                                 animate="containerVisible"

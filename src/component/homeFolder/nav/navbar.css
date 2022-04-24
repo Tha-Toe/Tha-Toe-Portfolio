@@ -3,17 +3,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 90%;
+    position: sticky;
     top: 0;
     z-index: 3;
     background-color: rgba(38, 38, 38, 0.9);
     border-bottom: 1px solid #D81E5B;
-    max-width: 1200px;
-    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
-    
+    width: 100%;
+    margin: 0 auto;
 }
 
 .navList {
@@ -43,6 +41,7 @@
     color: #29fcdc;
 }
 .humbagarContainer {
+    
     display: none;
 }
 
@@ -113,9 +112,15 @@
     color: #29fcdc;
 }
 
+.tMobileLogo {
+    display: none;
+}
 @media (max-width: 1005px) {
     .nContainer {
         display: none;
+    }
+    .tMobileLogo {
+        display: block;
     }
     .logoImg {
         width: 70px;

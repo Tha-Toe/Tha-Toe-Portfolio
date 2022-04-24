@@ -17,7 +17,6 @@ function Home () {
                 <AnimatePresence>
                     {introShow&&<Intro />}
                 </AnimatePresence>
-                <Navbar />
                 <Main />
         </div>
     )

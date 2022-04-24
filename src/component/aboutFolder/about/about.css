@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 50px;
     max-width: 1200px;
     min-height: 100vh;
@@ -13,6 +13,30 @@
     padding: 20px;
     position: relative;
 }
+
+.leftAnimate {
+    position: relative;
+    animation: lAni .7s ease-in;
+}
+@keyframes lAni {
+    0%{opacity: 0; transform: translateX(-200px);}
+    60%{opacity: 1;transform: translateX(0);}
+    80%{transform: translateX(20px)}
+    100%{transform: translateX(0)}
+}
+
+.rightAnimate {
+    position: relative;
+    animation: rAni .7s ease-in;
+}
+
+@keyframes rAni {
+    0%{opacity: 0; transform: translateX(200px);}
+    60%{opacity: 1;transform: translateX(0);}
+    80%{transform: translateX(20px)}
+    100%{transform: translateX(0)}
+}
+
 .myPhoto {
     width: 450px;
     border-top: 10px solid #29fcdc;

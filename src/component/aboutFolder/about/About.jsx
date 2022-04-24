@@ -6,36 +6,6 @@ import {motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 
-const leftVariant = {
-    initial: {
-        opacity: 0,
-        x: -300,
-    },
-    animate: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: .7,
-            type: "spring",
-            stiffness: 100
-        }
-    }
-}
-const rightVariant = {
-    initial: {
-        opacity: 0,
-        x: 300,
-    },
-    animate: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: .7,
-            type: "spring",
-            stiffness: 100
-        }
-    }
-}
 
 const scrollVariant = {
     initial: {
@@ -68,10 +38,10 @@ function About () {
 
     return(
         <div className="aboutContainer" id='about'>
-            <motion.div className="leftAbout" ref={leftRef} variants={leftVariant} initial="initial" animate = {`${leftVisible? "animate": ""}`}>
+            <div ref={leftRef} className = {`${"leftAbout"} ${leftVisible? "leftAnimate": ""}`}>
                 <img src="/myPhoto.png" className="myPhoto"/>
-            </motion.div>
-            <motion.div className="rightAbout" ref={rightRef} variants={rightVariant} initial="initial" animate = {`${rightVisible? "animate": ""}`}>
+            </div>
+            <div  ref={rightRef} className = {` ${"rightAbout"} ${rightVisible? "rightAnimate": ""}`}>
                 <div className="aboutHead">Who I am?</div>
                 <div className="aboutMe">About Me</div>
                 <p>I'm Tha Toe Saung, 20years old, junior React web developer with front end development skills.
@@ -92,7 +62,7 @@ function About () {
                         <FontAwesomeIcon icon={faDownload}/> Download CV
                     </a>
                 </motion.button>
-            </motion.div>
+            </div>
             <motion.div    
                 variants={scrollVariant} 
                 animate="animate" 
