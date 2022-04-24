@@ -115,16 +115,18 @@
 .tMobileLogo {
     display: none;
 }
-@media (max-width: 1005px) {
+@media (max-width: 1105px) {
     .nContainer {
         display: none;
     }
     .tMobileLogo {
         display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
     }
     .logoImg {
         width: 70px;
-        border-radius: 60px;
         cursor: pointer;
     }
     .humbagarContainer{
