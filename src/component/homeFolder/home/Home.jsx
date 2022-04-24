@@ -6,17 +6,8 @@ import Intro from "../intro/Intro"
 import {AnimatePresence,motion} from "framer-motion"
 
 function Home () {
-
-    const [introShow,setIntroShow] = useState(true);
-    setTimeout(() => {
-            setIntroShow(false);
-    }, 4000);
-
     return(
         <div className="hContainer" id="home">
-                <AnimatePresence>
-                    {introShow&&<Intro />}
-                </AnimatePresence>
                 <Main />
         </div>
     )

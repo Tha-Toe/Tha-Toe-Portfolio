@@ -5,18 +5,35 @@ import Project from './component/projectFolder/Project';
 import Experience from './component/skill/Experience';
 import Contact from './component/contactFolder/Contact';
 import Navbar from './component/homeFolder/nav/Navbar';
-import Test from "./Test"
+import Test from "./Test";
+import {AnimatePresence} from "framer-motion";
+import Intro from "./component/homeFolder/intro/Intro";
+import { useState } from 'react';
+
 
 function App() {
+  const [introShow,setIntroShow] = useState(true);
+  setTimeout(() => {
+          setIntroShow(false);
+  }, 4000);
+
   return (
-    <div className="bodyContainer">
-      <Navbar />
-      <Home />
-      <About />
-      <Project />
-      <Experience />
-      <Contact />
-    </div>
+    <>{
+    introShow?  <AnimatePresence>
+                  <Intro />
+                </AnimatePresence>
+                :
+                <div className="bodyContainer">
+                  <Navbar />
+                  <Home />
+                  <About />
+                  <Project />
+                  <Experience />
+                  <Contact />
+              </div>
+      }
+    </>
+
   );
 }
 

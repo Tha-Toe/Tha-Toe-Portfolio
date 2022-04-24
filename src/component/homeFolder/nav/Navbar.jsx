@@ -14,7 +14,7 @@ const containerVariant = {
             type: 'spring',
             stiffness: 300,
             duration: .5,
-            delay: 6,
+            delay: 2,
         }
     }
 }
@@ -51,7 +51,7 @@ const humbagarVariant = {
             duration: 1,
             type: "spring",
             stiffness: 300,
-            delay: 6,
+            delay: 2,
         }
     }
 }

@@ -83,7 +83,7 @@ function Main () {
                                             
                                             transition:{
                                                 duration: .5,
-                                                delay: (0.05 * (index+1))+4.5,
+                                                delay: (0.05 * (index+1))+0.5,
                                                 type:"spring",
                                                 stiffness: 800
                                             },
@@ -126,7 +126,7 @@ function Main () {
                                                 duration: .5,
                                                 type:"spring",
                                                 stiffness: 800,
-                                                delay: (0.05 * (index+4))+4.5
+                                                delay: (0.05 * (index+4))+0.5
                                             },
                                         }
                                     }}
@@ -167,7 +167,7 @@ function Main () {
                                             opacity: 1,
                                             transition:{
                                                 duration: .5,
-                                                delay: (0.05 * (index+7))+4.5,
+                                                delay: (0.05 * (index+7))+0.5,
                                                 type:"spring",
                                                 stiffness: 800
                                             },
@@ -208,7 +208,7 @@ function Main () {
                                             opacity: 1,
                                             transition:{
                                                 duration: .5,
-                                                delay: (0.05 * (index+10))+4.5,
+                                                delay: (0.05 * (index+10))+0.5,
                                                 type:"spring",
                                                 stiffness: 800
                                             },
@@ -249,7 +249,7 @@ function Main () {
                                             opacity: 1,
                                             transition:{
                                                 duration: .5,
-                                                delay: (0.05 * (index+13))+4.5,
+                                                delay: (0.05 * (index+13))+0.5,
                                                 type:"spring",
                                                 stiffness: 800
                                             },
@@ -292,7 +292,7 @@ function Main () {
                                             opacity: 1,
                                             transition:{
                                                 duration: .5,
-                                                delay: (0.05 * (index+19))+4.5,
+                                                delay: (0.05 * (index+19))+0.5,
                                                 type:"spring",
                                                 stiffness: 800
                                             },
@@ -333,7 +333,7 @@ function Main () {
                                             opacity: 1,
                                             transition:{
                                                 duration: .5,
-                                                delay: (0.05 * (index+22))+4.5,
+                                                delay: (0.05 * (index+22))+0.5,
                                                 type:"spring",
                                                 stiffness: 800
                                             },
@@ -354,19 +354,19 @@ function Main () {
                 </div>
             </div>
             <div className="rightMContainer">
-                <motion.div className="one" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 6.1, yoyo: Infinity,}}></motion.div>
-                <motion.div className="two" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 6.3, yoyo: Infinity,}}></motion.div>
-                <motion.div className="three" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 6.5, yoyo: Infinity,}}></motion.div>
-                <motion.div className="four" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 6.7, yoyo: Infinity,}}></motion.div>
-                <motion.div className="five" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 6.9, yoyo: Infinity,}}></motion.div>
-                <motion.div className="six" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 7.1, yoyo: Infinity,}}></motion.div>
-                <motion.div className="seven" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 7.3, yoyo: Infinity,}}></motion.div>
+                <motion.div className="one" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 2.1, yoyo: Infinity,}}></motion.div>
+                <motion.div className="two" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 2.3, yoyo: Infinity,}}></motion.div>
+                <motion.div className="three" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 2.5, yoyo: Infinity,}}></motion.div>
+                <motion.div className="four" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 2.7, yoyo: Infinity,}}></motion.div>
+                <motion.div className="five" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 2.9, yoyo: Infinity,}}></motion.div>
+                <motion.div className="six" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 3.1, yoyo: Infinity,}}></motion.div>
+                <motion.div className="seven" variants={creativeVariant} animate="animate" initial="initial" transition={{duration: .5, delay: 3.3, yoyo: Infinity,}}></motion.div>
             </div>
             <motion.div    
                 variants={scrollVariant} 
                 animate="animate" 
                 initial="initial" 
-                transition={{duration: .5,delay: 7.4, yoyo: Infinity}}
+                transition={{duration: .5,delay: 3.4, yoyo: Infinity}}
                 className="scrollLeft"
             >
                 scroll
@@ -376,7 +376,7 @@ function Main () {
                 variants={scrollVariant} 
                 animate="animate" 
                 initial="initial" 
-                transition={{duration: .5, delay:7.4, yoyo: Infinity}}
+                transition={{duration: .5, delay:3.4, yoyo: Infinity}}
                 className="scrollRight"
             >
                 scroll
