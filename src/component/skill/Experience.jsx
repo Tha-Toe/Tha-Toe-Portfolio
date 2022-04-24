@@ -24,11 +24,18 @@ function Experience () {
 
     const {ref: leftRef, inView: leftVisible} = useInView();
     const {ref: rightRef, inView: rightVisible} = useInView();
+    const [leftTrueVisible,setLeftTrueVisible] = useState(false);
+
+    useEffect(() => {
+        if(leftVisible) {
+            setLeftTrueVisible(true)
+        }
+    },[leftVisible])
 
 
     return (
         <div className = "experienceContainer" id="skill">
-            <div ref={leftRef} className={`${"eLeftContainer"} ${leftVisible? "eLeftAnimation" : ""}`}>
+            <div ref={leftRef} className={`${"eLeftContainer"} ${leftTrueVisible? "eLeftAnimation" : ""}`}>
                 <div className="eleftHeader">Skill & Experience</div>
                 <div className="eleftNote firstE">
                     I started study programming(web development) at october 16, 2021.

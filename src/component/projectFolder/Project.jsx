@@ -110,7 +110,7 @@ const Project = () => {
         <div className="projectContainer" id="project">
             <div className="projectHeader">My Project</div>
             <div className="projectList">
-                <div className={`${"project"} ${pOneView? "pOneAnimation" : ""}`} 
+                <div className={`${"project"} ${pOneVisible? "pOneAnimation" : ""}`} 
                     ref={pOneRef} 
                     onMouseEnter={()=>{
                         setHoverOne(true);
@@ -144,7 +144,7 @@ const Project = () => {
 
                 </div>
 
-                <div className={`${"project"} ${pTwoView? "pTwoAnimation" : ""}`} 
+                <div className={`${"project"} ${pTwoVisible? "pTwoAnimation" : ""}`} 
                     ref={pTwoRef}
                     onMouseEnter={()=>{
                         setHoverTwo(true);
@@ -178,7 +178,7 @@ const Project = () => {
 
                 </div>
 
-                <div className={`${"project"} ${pThreeView? "pThreeAnimation" : ""}`} 
+                <div className={`${"project"} ${pThreeVisible? "pThreeAnimation" : ""}`} 
                     ref={pThreeRef}
                     onMouseEnter={()=>{
                         setHoverThree(true);
@@ -212,7 +212,7 @@ const Project = () => {
                     <div className={`${"hoverRight"} ${hoverThree? "hoverRightStart" : ""}`}></div>
                 </div>
 
-                <div className={`${"project"} ${pFourView? "pFourAnimation" : ""}`} 
+                <div className={`${"project"} ${pFourVisible? "pFourAnimation" : ""}`} 
                     ref={pFourRef}
                     onMouseEnter={()=>{
                         setHoverFour(true);

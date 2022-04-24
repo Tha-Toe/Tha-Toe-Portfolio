@@ -8,7 +8,6 @@
     padding-left: 20px;
     padding-right: 20px;
     min-height: 100vh;
-    background-color: red;
 }
 .leftMContainer {
     margin-right: 100px;
@@ -110,26 +109,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: red;
     }
     .leftMContainer {
         margin-right: 0px;
-        height: 90vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: green;
         width: 100%;
     }
     .rightMContainer{
-        background-color: yellow;
+        height: 20vh;
     }
 }
 
 @media (max-width: 700px) {
     .mContainer {
-        background-color: green;
         padding-left: 0px;
         padding-right: 0px;
         margin: 0 auto;
@@ -188,12 +184,12 @@
     .first{
         font-size: 30px;
         font-weight: 550;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .firstHi {
         font-size: 30px;
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .second {
         font-size: 30px;

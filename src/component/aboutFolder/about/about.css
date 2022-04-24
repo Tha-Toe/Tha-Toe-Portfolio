@@ -13,28 +13,45 @@
     padding: 20px;
     position: relative;
 }
+.leftAbout {
+    position: relative;
+    margin-right: 100px;
+}
 
 .leftAnimate {
-    position: relative;
     animation: lAni .7s ease-in;
 }
+/*
 @keyframes lAni {
     0%{opacity: 0; transform: translateX(-200px);}
     60%{opacity: 1;transform: translateX(0);}
     80%{transform: translateX(20px)}
     100%{transform: translateX(0)}
 }
-
-.rightAnimate {
-    position: relative;
-    animation: rAni .7s ease-in;
+*/
+@keyframes lAni {
+    0%{opacity: 0; left: -200px;}
+    60%{opacity: 1;left: -100px;}
+    80%{left: -20px;}
+    100%{left: 0px;}
 }
 
+.rightAnimate {
+    animation: rAni .7s ease-in;
+}
+/*
 @keyframes rAni {
     0%{opacity: 0; transform: translateX(200px);}
     60%{opacity: 1;transform: translateX(0);}
     80%{transform: translateX(20px)}
     100%{transform: translateX(0)}
+}
+*/
+@keyframes rAni {
+    0%{opacity: 0; left: 200px;}
+    60%{opacity: 1;left: 100px;}
+    80%{left: 20px;}
+    100%{left: 0px;}
 }
 
 .myPhoto {
@@ -52,6 +69,7 @@
     padding: 25px;
     border-top: 10px solid #29fcdc;
     box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+    position: relative;
 }
 .aboutHead {
     color: #29FCDC;
@@ -81,11 +99,16 @@
 }
 
 @media (max-width: 1005px) {
+
     .aboutContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: auto;
+    }
+
+    .leftAbout {
+        margin-right: 0;
     }
     .myPhoto {
         margin-bottom: 50px;

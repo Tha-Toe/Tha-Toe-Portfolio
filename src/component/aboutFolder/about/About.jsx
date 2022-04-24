@@ -38,10 +38,10 @@ function About () {
 
     return(
         <div className="aboutContainer" id='about'>
-            <div ref={leftRef} className = {`${"leftAbout"} ${leftVisible? "leftAnimate": ""}`}>
+            <div ref={leftRef} className = {`${"leftAbout"} ${leftTrueVisible? "leftAnimate": ""}`}>
                 <img src="/myPhoto.png" className="myPhoto"/>
             </div>
-            <div  ref={rightRef} className = {` ${"rightAbout"} ${rightVisible? "rightAnimate": ""}`}>
+            <div  ref={rightRef} className = {` ${"rightAbout"} ${rightTrueVisible? "rightAnimate": ""}`}>
                 <div className="aboutHead">Who I am?</div>
                 <div className="aboutMe">About Me</div>
                 <p>I'm Tha Toe Saung, 20years old, junior React web developer with front end development skills.

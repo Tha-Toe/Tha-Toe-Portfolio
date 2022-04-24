@@ -124,11 +124,11 @@ function Navbar () {
                     <img src="/myLogo.png" className="menulogoImg"/>
                     <div className="webDeveloper">Web Developer(front end)</div>
                     <div className="humbagarListContainer">
-                        <a className="humbagarList" href="#home">Home</a>
-                        <a className="humbagarList" href="#about">About</a>
-                        <a className="humbagarList" href="#project">Project</a>
-                        <a className="humbagarList" href="#skill">Skill</a>
-                        <a className="humbagarList" href="#contact">Contact</a>
+                        <a className="humbagarList" href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+                        <a className="humbagarList" href="#about" onClick={() => setMenuOpen(false)}>About</a>
+                        <a className="humbagarList" href="#project" onClick={() => setMenuOpen(false)}>Project</a>
+                        <a className="humbagarList" href="#skill" onClick={() => setMenuOpen(false)}>Skill</a>
+                        <a className="humbagarList" href="#contact" onClick={() => setMenuOpen(false)}s>Contact</a>
                     </div>
                 </div>
             </div>
