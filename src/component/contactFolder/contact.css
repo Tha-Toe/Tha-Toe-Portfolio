@@ -18,10 +18,11 @@
     animation: chv .5s ease-in;
     position: relative;
 }
+
 @keyframes chv {
-    0%{opacity: 0; transform: translateY(100px)}
-    50%{opacity: 0; transform: translateY(80px)}
-    100%{opacity: 1; transform: translateY(0)}
+    0%{opacity: 0; top: -100px;}
+    50%{opacity: 0; top: -80px;}
+    100%{opacity: 1; top: 0px;}
 }
 
 
@@ -43,9 +44,10 @@
     animation: la .5s ease-in;
     position: relative;
 }
+
 @keyframes la {
-    0%{opacity: 0; transform: translateX(-300px)}
-    100%{opacity: 1; transform: translateX(0)}
+    0%{opacity: 0; left: -300px;}
+    100%{opacity: 1; left: 0px;}
 }
 
 .contactNoteContainer {
@@ -78,8 +80,8 @@
     position: relative;
 }
 @keyframes ra {
-    0%{opacity: 0; transform: translateX(300px)}
-    100%{opacity: 1; transform: translateX(0)}
+    0%{opacity: 0; left: -300px;}
+    100%{opacity: 1; left: 0px;}
 }
 
 .messageInput {
@@ -153,7 +155,6 @@
 
     .contactRight {
         margin-top: 50px;
-        background-color: red;
     }
 }
 

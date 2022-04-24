@@ -38,6 +38,7 @@
 
 .rightAnimate {
     animation: rAni .7s ease-in;
+    position: relative;
 }
 /*
 @keyframes rAni {
@@ -48,9 +49,9 @@
 }
 */
 @keyframes rAni {
-    0%{opacity: 0; left: 200px;}
-    60%{opacity: 1;left: 100px;}
-    80%{left: 20px;}
+    0%{opacity: 0; left: -200px;}
+    60%{opacity: 1;left: -100px;}
+    80%{left: -20px;}
     100%{left: 0px;}
 }
 

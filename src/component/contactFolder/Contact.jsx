@@ -48,8 +48,8 @@ function Contact () {
         <div id="contact" className = "contactMainContainer">
             <div className={`${"contactHeader"} ${hV? "contactHeaderAnimation" : ""}`} ref={headRef}>Contact Me</div>
             <div className = "contactContainer">
-                <div className={`${"contactLeft"} ${hV? "messageLeftAnimation" : ""}`} ref={leftRef}>
-                    <div  className={`${"messageHeaderContainer"} ${hV? "messageLeftAnimation" : ""}`}>
+                <div className={`${"contactLeft"} ${lV? "messageLeftAnimation" : ""}`} ref={leftRef}>
+                    <div  className={`${"messageHeaderContainer"} ${hV? "" : ""}`}>
                                 <div className="messageHeader">contact me with</div>
                                 <motion.div    
                                         variants={creativeVariant} 
@@ -85,7 +85,7 @@ function Contact () {
                             <div className="contactNote">Tha_Toe</div>
                     </div>
                 </div>
-                <div ref={rightRef} className={`${"contactRight"} ${hV? "messageRightAnimation" : ""}`}>
+                <div ref={rightRef} className={`${"contactRight"} ${rV? "messageRightAnimation" : ""}`}>
                     <form action="https://formsubmit.co/thatoesaung510dev@gmail.com" method="POST" >
                         <div className="messageHeaderContainer">
                             <div className="messageHeader">Or you can send me direct message below</div>
