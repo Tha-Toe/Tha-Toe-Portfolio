@@ -141,6 +141,10 @@
     color: #fff;
 }
 
+.addressLink:hover {
+    color: blue;
+}
+
 @media (max-width: 1005px) {
     .contactContainer {
         display: flex;

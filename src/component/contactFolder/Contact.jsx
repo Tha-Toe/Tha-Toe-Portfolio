@@ -74,15 +74,15 @@ function Contact () {
                         </div>
                         <div className="contactNoteContainer">
                             <FontAwesomeIcon icon={faFacebook} className="contactIcon"/>
-                            <div className="contactNote">Tha Toe</div>
+                            <a href="https://www.facebook.com/tha.toe.906" className="contactNote addressLink">Tha Toe</a>
                         </div>
                         <div className="contactNoteContainer">
                             <FontAwesomeIcon icon={faTwitter} className="contactIcon"/>
-                            <div className="contactNote">Tha Toe Saung</div>
+                            <a href="https://twitter.com/ThaToeSaungDev?s=09" className="contactNote addressLink">Tha Toe Saung</a>
                         </div>
                         <div className="contactNoteContainer">
                             <FontAwesomeIcon icon={faGithub} className="contactIcon"/>
-                            <div className="contactNote">Tha_Toe</div>
+                            <a className="contactNote addressLink" href="https://github.com/Tha-Toe">Tha-Toe</a>
                     </div>
                 </div>
                 <div ref={rightRef} className={`${"contactRight"} ${rV? "messageRightAnimation" : ""}`}>
@@ -103,6 +103,7 @@ function Contact () {
                         <input type="text" name="subject" className="messageInput" placeholder="Subject"/>
                         <textarea type="text" name="message" className="messageInput msgBox" placeholder="message" rows="4" cols="50"></textarea>
                         <button className="sendButton" type="submit"><FontAwesomeIcon icon={faEnvelope} className="buttonIcon"/> Send Message </button>
+                        <input type="hidden" name="_next" value="https://thatoesaung.vercel.app/thankyou" />
                     </form>
                 </div>
             </div>
