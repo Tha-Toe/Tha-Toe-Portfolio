@@ -3,7 +3,7 @@ import "./contact.css";
 import {motion} from "framer-motion";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAnglesDown, faEnvelope, faMapLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
-import {faFacebook, faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faGithub, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import { useInView } from "react-intersection-observer";
 
 
@@ -59,7 +59,7 @@ function Contact () {
                                         >
                                     <FontAwesomeIcon icon={faAnglesDown} className="headIcon"/>
                                 </motion.div> 
-                            </div>
+                        </div>
                         <div className="contactNoteContainer">
                             <FontAwesomeIcon icon={faPhone} className="contactIcon"/>
                             <div className="contactNote">+959773159335</div>
@@ -84,6 +84,10 @@ function Contact () {
                             <FontAwesomeIcon icon={faGithub} className="contactIcon"/>
                             <a className="contactNote addressLink" href="https://github.com/Tha-Toe">Tha-Toe</a>
                     </div>
+                    <div className="contactNoteContainer">
+                            <FontAwesomeIcon icon={faLinkedinIn} className="contactIcon"/>
+                            <a href="https://www.linkedin.com/in/tha-toe-saung-736a90238/" className="contactNote addressLink">Tha Toe Saung</a>
+                    </div>
                 </div>
                 <div ref={rightRef} className={`${"contactRight"} ${rV? "messageRightAnimation" : ""}`}>
                     <form action="https://formsubmit.co/thatoesaung510dev@gmail.com" method="POST" >
@@ -103,7 +107,7 @@ function Contact () {
                         <input type="text" name="subject" className="messageInput" placeholder="Subject"/>
                         <textarea type="text" name="message" className="messageInput msgBox" placeholder="message" rows="4" cols="50"></textarea>
                         <button className="sendButton" type="submit"><FontAwesomeIcon icon={faEnvelope} className="buttonIcon"/> Send Message </button>
-                        <input type="hidden" name="_next" value="https://thatoesaung.vercel.app/thankyou" />
+                        <input type="hidden" name="_next" value="https://thatoesaung.vercel.app" />
                     </form>
                 </div>
             </div>
