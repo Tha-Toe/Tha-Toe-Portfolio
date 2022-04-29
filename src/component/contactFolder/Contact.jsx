@@ -107,7 +107,7 @@ function Contact () {
                         <input type="text" name="subject" className="messageInput" placeholder="Subject"/>
                         <textarea type="text" name="message" className="messageInput msgBox" placeholder="message" rows="4" cols="50"></textarea>
                         <button className="sendButton" type="submit"><FontAwesomeIcon icon={faEnvelope} className="buttonIcon"/> Send Message </button>
-                        <input type="hidden" name="_next" value="https://thatoesaung.vercel.app" />
+                        <input type="hidden" name="_next" value="https://thatoesaung.vercel.app/thankyou" />
                     </form>
                 </div>
             </div>
