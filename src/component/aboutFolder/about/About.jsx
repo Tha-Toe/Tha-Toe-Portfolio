@@ -58,7 +58,7 @@ function About () {
                         }
                     }}
                 >
-                    <a className="cvLink" href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:1d12a958-ebe5-3eda-9bae-3c6668249c37">
+                    <a className="cvLink" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:333a35b0-424b-3824-ba58-21f7f89fb027">
                         <FontAwesomeIcon icon={faDownload}/> Download CV
                     </a>
                 </motion.button>
