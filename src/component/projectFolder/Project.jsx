@@ -231,7 +231,7 @@ const Project = () => {
                             transition: `all .4s ease`,
                         }}
                         > 
-                            <div className="projectName">Weahter Project</div>
+                            <div className="projectName">Weather Project</div>
                             <div className="projectDetail">
                                 This is weather project. I used open weather api to create it.
                                 You can find any city name and you can save. Default city is Mandalay.
