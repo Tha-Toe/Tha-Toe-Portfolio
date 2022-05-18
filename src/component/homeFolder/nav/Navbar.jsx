@@ -100,7 +100,7 @@ function Navbar () {
                                 initial="hidden"
                                 animate="containerVisible"
             >
-                        <motion.img src="/myLogo.png" className="logoImg"
+                        <motion.img src="/innerLogo.png" className="logoImg"
                             variants={logoVariant}
                             animate="animate"
                             onClick={refreshPage}
@@ -121,7 +121,7 @@ function Navbar () {
             </motion.div>
             <div className={`${"menuContainer"} ${menuOpen? "menuActive":"menuHide"}`}>
                 <div className={`${"menuStatic"} ${menuOpen? "menuAnimate" : ""}`}>
-                    <img src="/myLogo.png" className="menulogoImg"/>
+                    <img src="/innterLogo.png" className="menulogoImg"/>
                     <div className="webDeveloper">Web Developer(front end)</div>
                     <div className="humbagarListContainer">
                         <a className="humbagarList" href="#home" onClick={() => setMenuOpen(false)}>Home</a>
