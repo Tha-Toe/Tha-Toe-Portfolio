@@ -17,7 +17,6 @@
 }
 .mNote {
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
 .firstLine, .secondLine, .thirdLine {
     display: flex;
@@ -26,17 +25,17 @@
 }
 
 .first{
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 .second, .firstHi {
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 .third {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -52,6 +51,7 @@
     display: inline-block;
     position: relative;
     font-family: Segoe Script;
+    font-family: 'Caveat', cursive;
     color: #fff;
     color: #ff5d40; 
     text-shadow: 3px 1px #DC3606 , 7px 2px 5px #000; 
@@ -64,7 +64,9 @@
     color: #767676; 
     color: rgb(194, 194, 194);
     text-shadow: 5px 1px #DC3606 , 7px 2px 5px #000; 
-    font-family: Segoe Script; 
+    font-family: Segoe Script;
+    font-family: 'Caveat', cursive;
+ 
 }
 .noteVisible:hover {
     color: #ff5d40;
@@ -151,18 +153,18 @@
         margin-bottom: 20px;
     }
     .firstHi {
-        font-size: 65px;
+        font-size: 75px;
         font-weight: 600;
         margin-bottom: 20px;
     }
     .second {
-        font-size: 65px;
+        font-size: 75px;
         font-weight: 600;
         margin-bottom: 20px;
 
     }
     .third {
-        font-size: 40px;
+        font-size: 60px;
         font-weight: 400;
     }
 }
@@ -170,21 +172,21 @@
     .first{
         font-size: 60px;
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .firstHi {
-        font-size: 2rem;
+        font-size: 3.5rem;
         font-weight: 600;
     }
     .second {
         font-size: 55px;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         font-weight: 600;
     }
     .third {
         font-size: 50px;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .rightMContainer {
         width: 70%;
@@ -194,8 +196,22 @@
         width: 15px;
         border-radius: 50%;
     }
+    .noteNameVisible{
+        text-shadow: 2px 1px #DC3606 , 5px 2px 5px #000; 
+
+    }
+    .noteVisible{
+        text-shadow: 3px 1px #DC3606 , 5px 2px 5px #000; 
+    }
 }
 @media (max-width: 360px) {
+    .noteNameVisible{
+        text-shadow: 2px 1px #DC3606 , 5px 2px 5px #000; 
+
+    }
+    .noteVisible{
+        text-shadow: 3px 1px #DC3606 , 5px 2px 5px #000; 
+    }
     .first{
         font-size: 30px;
         font-weight: 550;
@@ -204,17 +220,17 @@
     .firstHi {
         font-size: 30px;
         font-weight: 600;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .second {
         font-size: 30px;
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .third {
         font-size: 25px;
         font-weight: 400;
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .rightMContainer {
         width: 70%;

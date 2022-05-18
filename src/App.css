@@ -24,7 +24,10 @@ body {
     top: 80%;
     color: #fff;
     font-family: Lucida Handwriting;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
 }
+
 
 .scrollRight{
     position: absolute;
@@ -32,4 +35,16 @@ body {
     top: 80%;
     color: #fff;
     font-family: Lucida Handwriting;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+@media (max-width:400px) {
+    .scrollLeft{
+        font-size: 1rem;
+
+    }
+    .scrollRight{
+        font-size: 1rem;
+
+    }
 }

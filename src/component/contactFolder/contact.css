@@ -5,15 +5,17 @@
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    font-family: Century Gothic;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .contactHeader {
-    font-size: 27px;
+    font-size: 35px;
     font-weight: 600;
     color: #D81E5B;
     color: #ff5d40;
     margin-bottom: 70px;
+    font-family: 'Caveat', cursive;
+
 }
 .contactHeaderAnimation {
     animation: chv .5s ease-in;
@@ -175,7 +177,7 @@
         font-size: 17px;
     }
     .contactHeader {
-        font-size: 23px;
+        font-size: 30px;
     }
     .messageHeader {
         font-weight: 500;

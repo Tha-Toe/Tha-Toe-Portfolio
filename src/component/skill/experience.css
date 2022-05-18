@@ -40,6 +40,7 @@
     font-family: Century Gothic;
     color: #ff5d40;
     margin-bottom: 30px;
+    font-family: 'Caveat', cursive;
 }
 
 .eleftNote {
@@ -76,15 +77,18 @@
     justify-content: flex-start;
     margin-bottom: 20px;
     font-family: Century Gothic;
+    font-family: 'Caveat', cursive;
 }
 
 .skillHeader {
     color: #ff5d40;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 30px;
     margin-top: 10px;
     font-weight: 600;
     font-family: Century Gothic;
+    font-family: 'Caveat', cursive;
+
 }
 .skillName {
     font-size: 20px;
@@ -110,12 +114,14 @@
     font-weight: 600;
     font-family: Century Gothic;
     cursor: pointer;
+    font-family: 'Caveat', cursive;
 }
 .progressLogoBlue {
     color: #29fcdc;
     font-weight: 600;
     font-family: Century Gothic;
     cursor: pointer;
+    font-family: 'Caveat', cursive;
 }
 
 .progressLogoAnimation {
