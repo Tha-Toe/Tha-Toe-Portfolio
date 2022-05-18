@@ -78,7 +78,7 @@ function Navbar () {
                 animate="containerVisible"
             >
                 <div className="tLogo">
-                    <motion.img src="/myLogo.png" className="logoImg"
+                    <motion.img src="/innerLogo.png" className="logoImg"
                         variants={logoVariant}
                         animate="animate"
                         onClick={refreshPage}
