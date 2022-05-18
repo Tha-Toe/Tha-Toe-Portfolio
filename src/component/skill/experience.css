@@ -21,7 +21,7 @@
     padding-bottom: 50px;
     background-color: #2b2b2b;
     box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
-    border-top: 10px solid #D81E5B;
+    border-top: 10px solid #ff5d40;
 }
 
 .eLeftAnimation {
@@ -38,7 +38,7 @@
     font-size: 27px;
     font-weight: 600;
     font-family: Century Gothic;
-    color: #D81E5B;
+    color: #ff5d40;
     margin-bottom: 30px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .skillHeader {
-    color: #D81E5B;
+    color: #ff5d40;
     font-size: 20px;
     margin-bottom: 30px;
     margin-top: 10px;
@@ -106,6 +106,7 @@
 }
 .progressLogoPink {
     color: #D81E5B;
+    color: #ff5d40;
     font-weight: 600;
     font-family: Century Gothic;
     cursor: pointer;
@@ -133,8 +134,9 @@
     from{width: 0%;}
 }
 
-.skillOne {
+.skillOne, .skillThree, .skillFive, .skillSeven {
     color: #D81E5B;
+    color: #ff5d40;
 
 }
 .skillOneBar{
@@ -142,61 +144,52 @@
     width: 90%;
 }
 
-.skillTwo {
+.skillTwo, .skillFour, .skillSix, .skillEight ,.skillNine {
     color: #29fcdc;
+    color: #ff5d40;
 }
 .skillTwoBar{
-    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
+    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
     width: 80%;
 }
 
-.skillThree {
-    color: #D81E5B;
-}
 .skillThreeBar{
     background: linear-gradient(to left, #D81E5B,  #D7CF07);
     width: 80%;
 }
 
-.skillFour {
-    color: #29fcdc;
-}
+
 .skillFourBar{
-    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
-    width: 75%;
+    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
+    width: 90%;
 }
 
-.skillFive {
-    color: #D81E5B;
-}
+
 .skillFiveBar{
     background: linear-gradient(to left, #D81E5B,  #D7CF07);
+    width: 90%;
+}
+
+.skillNineBar {
+    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
     width: 80%;
 }
 
-.skillSix {
-    color: #29fcdc;
-}
 .skillSixBar{
-    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
+    background: linear-gradient(to left, #D81E5B,  #D7CF07);
     width: 20%;
 }
 
-.skillSeven {
-    color: #de1e5b;
-}
 .skillSevenBar{
-    background: linear-gradient(to left, #D81E5B,  #D7CF07);
+    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
     width: 15%;
 }
 
-.skillEight {
-    color: #29fcdc;
-}
 .skillEightBar{
-    background: linear-gradient(to left, #48E5C2,  #D1F0B1);
+    background: linear-gradient(to left, #D81E5B,  #D7CF07);
     width: 20%;
 }
+
 
 
 @media (max-width: 1005px) {

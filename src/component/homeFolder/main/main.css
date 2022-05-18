@@ -12,6 +12,9 @@
 .leftMContainer {
     margin-right: 100px;
 }
+.orange {
+    color: #E15136;
+}
 .mNote {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -44,15 +47,27 @@
     display: inline-block;
 }
 
+.noteNameVisible {
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+    font-family: Segoe Script;
+    color: #fff;
+    color: #ff5d40; 
+    text-shadow: 3px 1px #DC3606 , 7px 2px 5px #000; 
+}
 .noteVisible {
     margin-left: 3px;
     display: inline-block;
     position: relative;
-
     color: #fff;
+    color: #767676; 
+    color: rgb(194, 194, 194);
+    text-shadow: 5px 1px #DC3606 , 7px 2px 5px #000; 
+    font-family: Segoe Script; 
 }
 .noteVisible:hover {
-    color: #29fcdc;
+    color: #ff5d40;
     display: inline-block;
     position: relative;
     transform: scaleX(1.1) scaleY(.8) translateY(50px) rotate(30deg);

@@ -8,6 +8,7 @@
     z-index: 3;
     background-color: rgba(38, 38, 38, 0.9);
     border-bottom: 1px solid #D81E5B;
+    border-bottom: 1px solid #ff5d40;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
@@ -36,9 +37,10 @@
 }
 .navChild:hover{
     color: #29fcdc;
+    color: #ff5d40;
 }
 .navChild:active {
-    color: #29fcdc;
+    color: #ff5d40;
 }
 .humbagarContainer {
     
@@ -86,7 +88,7 @@
     opacity: 1;
 }
 .webDeveloper {
-    color: #D81E5B;
+    color: #ff5d40;
     font-weight: 600;
     font-size: 17px;
     margin-bottom: 50px;
@@ -103,13 +105,13 @@
     text-decoration: none;
     color: #fff;
     padding: 20px 300px;
-    border-bottom: 1px solid #29fcdc;
+    border-bottom: 1px solid #ff5d40;
 }
 .humbagarList:hover{
-    color: #29fcdc;
+    color: #ff5d40;
 }
 .humbagarList:active {
-    color: #29fcdc;
+    color: #ff5d40;
 }
 
 .tMobileLogo {
@@ -140,7 +142,7 @@
     .stick{
         width: 30px;
         height: 3px;
-        background-color: #29fcdc;
+        background-color: #ff5d40;
         margin-bottom: 5px;
         border-radius: 3px;
         transition: all .5s ease-in-out;

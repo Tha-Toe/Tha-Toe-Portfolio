@@ -148,7 +148,7 @@ function Main () {
                         {tha.map((e,index) => 
                             <motion.span 
                                     key={index} 
-                                    className={`"e" ${noteVisible? "noteVisible": ""}`} 
+                                    className={`"e" ${noteVisible? "noteNameVisible": ""} "orange" `} 
                                     style={{"--i":index+7}}
                                     initial="hidden"
                                     animate="mNoteVisible"
@@ -189,7 +189,7 @@ function Main () {
                         {toe.map((e,index) => 
                             <motion.span 
                                     key={index} 
-                                    className={`"e" ${noteVisible? "noteVisible": ""}`} 
+                                    className={`"e" ${noteVisible? "noteNameVisible": ""}`} 
                                     style={{"--i":index+10}}
                                     initial="hidden"
                                     animate="mNoteVisible"
@@ -230,7 +230,7 @@ function Main () {
                         {saung.map((e,index) => 
                             <motion.span 
                                     key={index} 
-                                    className={`"e" ${noteVisible? "noteVisible": ""}`} 
+                                    className={`"e" ${noteVisible? "noteNameVisible": ""}`} 
                                     style={{"--i":index+13}}
                                     initial="hidden"
                                     animate="mNoteVisible"

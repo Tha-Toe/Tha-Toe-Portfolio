@@ -88,10 +88,20 @@ function Experience () {
                     </div>
                 </div>
                 <div className="skillContainer">
-                    <div className="skillName skillFive">React Js</div>
+                    <div className="skillName skillFive">Tailwind Css</div>
                     <div className="progressContainer">
                         <div className={`${"progressBar"} ${"skillFiveBar"} ${rightVisible? "skillAnimation" : ""}`}></div>
                         <motion.div className="progressLogoPink" 
+                                drag = "x"
+                                dragConstraints = {{right: 0, left: 0}}
+                                >T</motion.div>
+                    </div>
+                </div>
+                <div className="skillContainer">
+                    <div className="skillName skillNine">React Js</div>
+                    <div className="progressContainer">
+                        <div className={`${"progressBar"} ${"skillNineBar"} ${rightVisible? "skillAnimation" : ""}`}></div>
+                        <motion.div className="progressLogoBlue" 
                                 drag = "x"
                                 dragConstraints = {{right: 0, left: 0}}
                                 >R</motion.div>
@@ -102,7 +112,7 @@ function Experience () {
                     <div className="skillName skillSix">Node Js</div>
                     <div className="progressContainer">
                         <div className={`${"progressBar"} ${"skillSixBar"} ${rightVisible? "skillAnimation" : ""}`}></div>
-                        <motion.div className="progressLogoBlue" 
+                        <motion.div className="progressLogoPink" 
                                 drag = "x"
                                 dragConstraints = {{right: 0, left: 0}}
                                 >N</motion.div>                    </div>
@@ -111,7 +121,7 @@ function Experience () {
                     <div className="skillName skillSeven">Express JS</div>
                     <div className="progressContainer">
                         <div className={`${"progressBar"} ${"skillSevenBar"} ${rightVisible? "skillAnimation" : ""}`}></div>
-                        <motion.div className="progressLogoPink" 
+                        <motion.div className="progressLogoBlue" 
                                 drag = "x"
                                 dragConstraints = {{right: 0, left: 0}}
                                 >E</motion.div>
@@ -121,7 +131,7 @@ function Experience () {
                     <div className="skillName skillEight">Mongo DB</div>
                     <div className="progressContainer">
                         <div className={`${"progressBar"} ${"skillEightBar"} ${rightVisible? "skillAnimation" : ""}`}></div>
-                        <motion.div className="progressLogoBlue" 
+                        <motion.div className="progressLogoPink" 
                                 drag = "x"
                                 dragConstraints = {{right: 0, left: 0}}
                                 >M</motion.div>

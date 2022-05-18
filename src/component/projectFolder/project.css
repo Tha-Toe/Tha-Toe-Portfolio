@@ -11,7 +11,7 @@
 
 .projectHeader {
     color: #fff;
-    color: #D81E5B;
+    color: #ff5d40;
     font-family: Century Gothic;
     font-size: 30px;
     font-weight: 600;
@@ -55,6 +55,7 @@
 .hoverLeft {
     background-color: #B531B8;
     background-color: rgba(181, 49, 184, 0.9);
+/*    background-color: rgb(255, 92, 63, 0.9); */
     height: 700px;
     width: 250px;
     position: absolute;
@@ -65,6 +66,7 @@
 .hoverRight {
     background-color: #674DC7;
     background-color: rgba(103, 77, 199, 0.8);
+/*    background-color: rgb(255, 92, 63, 0.9); */
     height: 700px;
     width: 250px;
     position: absolute;
@@ -124,7 +126,7 @@
 .pFourAnimation {
     animation: pTwo .5s ease-in;
     position: relative;
-    border-top: 10px solid #D81E5B;
+    border-top: 10px solid #ff5d40;
 }
 
 @keyframes pTwo {
