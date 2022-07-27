@@ -1,201 +1,222 @@
 .contactMainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    font-family: 'Didact Gothic', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 .contactHeader {
-    font-size: 35px;
-    font-weight: 600;
-    color: #D81E5B;
-    color: #ff5d40;
-    margin-bottom: 70px;
-    font-family: 'Caveat', cursive;
-
+  font-size: 35px;
+  font-weight: 600;
+  color: #d81e5b;
+  color: #ff5d40;
+  margin-bottom: 70px;
+  font-family: "Caveat", cursive;
 }
 .contactHeaderAnimation {
-    animation: chv .5s ease-in;
-    position: relative;
+  animation: chv 0.5s ease-in;
+  position: relative;
 }
 
 @keyframes chv {
-    0%{opacity: 0; top: -100px;}
-    50%{opacity: 0; top: -80px;}
-    100%{opacity: 1; top: 0px;}
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  50% {
+    opacity: 0;
+    top: -80px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
 }
 
-
 .contactContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .contactLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 100px;
 }
 .messageLeftAnimation {
-    animation: la .5s ease-in;
-    position: relative;
+  animation: la 0.5s ease-in;
+  position: relative;
 }
 
 @keyframes la {
-    0%{opacity: 0; left: -300px;}
-    100%{opacity: 1; left: 0px;}
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }
 
 .contactNoteContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
 }
 
 .contactIcon {
-    color: #ff5d40;
-    font-size: 28px;
-    margin-right: 15px;
+  color: #ff5d40;
+  font-size: 28px;
+  margin-right: 15px;
 }
 
 .contactNote {
-    color: #fff;
-    font-size: 17px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
 }
-
-
+.contactNote > a {
+  all: unset;
+}
+.contactNote:hover {
+  color: blue;
+}
 .contactRight {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .messageRightAnimation {
-    animation: ra .5s ease-in;
-    position: relative;
+  animation: ra 0.5s ease-in;
+  position: relative;
 }
 @keyframes ra {
-    0%{opacity: 0; left: -300px;}
-    100%{opacity: 1; left: 0px;}
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }
 
 .messageInput {
-    display: block;
-    background: none;
-    height: 50px;
-    width: 400px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    background-image:none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    font-size: 17px;
-    color: #fff;
-    background-color: #2b2b2b;
+  display: block;
+  background: none;
+  height: 50px;
+  width: 400px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 17px;
+  color: #fff;
+  background-color: #2b2b2b;
 }
 .messageInput:focus {
-    outline:none;
-    border-bottom: 2px solid #ff5d40;
+  outline: none;
+  border-bottom: 2px solid #ff5d40;
 }
 
 .msgBox {
-    resize: none;
-    height: 100px;
+  resize: none;
+  height: 100px;
 }
 
 .messageHeader {
-    color: #fff;
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
 }
 .sendButton {
-    background-color: #ff5d40;
-    color: #fff;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    font-size: 17px;
+  background-color: #ff5d40;
+  color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 17px;
 }
 .sendButton:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 .messageHeaderContainer {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-
 .headIcon {
-    margin-left: 10px;
-    color: #fff;
+  margin-left: 10px;
+  color: #fff;
 }
 
 .addressLink:hover {
-    color: blue;
+  color: blue;
 }
 
 @media (max-width: 1005px) {
-    .contactContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-    }
-    .contactLeft {
-        margin-right: 0;
-    }
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .contactLeft {
+    margin-right: 0;
+  }
 
-    .contactRight {
-        margin-top: 50px;
-    }
+  .contactRight {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 700px) {
-
-
 }
 @media (max-width: 500px) {
-    .messageInput {
-        height: 40px;
-        width: 300px;
-        font-size: 17px;
-    }
-    .contactHeader {
-        font-size: 30px;
-    }
-    .messageHeader {
-        font-weight: 500;
-        font-size: 17px;
-    }
-    .msgBox {
-        resize: none;
-        height: 100px;
-    }
+  .messageInput {
+    height: 40px;
+    width: 300px;
+    font-size: 17px;
+  }
+  .contactHeader {
+    font-size: 30px;
+  }
+  .messageHeader {
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .msgBox {
+    resize: none;
+    height: 100px;
+  }
 }
 @media (max-width: 350px) {
-    .messageInput {
-        height: 35px;
-        width: 250px;
-        font-size: 17px;
-    }
-    .msgBox {
-        resize: none;
-        height: 100px;
-    }
+  .messageInput {
+    height: 35px;
+    width: 250px;
+    font-size: 17px;
+  }
+  .msgBox {
+    resize: none;
+    height: 100px;
+  }
 }

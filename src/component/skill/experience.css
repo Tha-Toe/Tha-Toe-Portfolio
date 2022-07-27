@@ -1,246 +1,264 @@
 .experienceContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    max-width: 1200px;
-    min-height: 100vh;
-    margin: 50px auto;
-    padding: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
 }
 
 .eLeftContainer {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    height: auto;
-    padding-bottom: 50px;
-    background-color: #2b2b2b;
-    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
-    border-top: 10px solid #ff5d40;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: #2b2b2b;
+  box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+  border-top: 10px solid #ff5d40;
 }
 
 .eLeftAnimation {
-    animation: eLeft .5s ease-in;
-    position: relative;
+  animation: eLeft 0.5s ease-in;
+  position: relative;
 }
 
 @keyframes eLeft {
-    0%{opacity: 0; transform: translateX(-200px);}
-    100%{transform: translateX(0)}
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .eleftHeader {
-    font-size: 27px;
-    font-weight: 600;
-    font-family: Century Gothic;
-    color: #ff5d40;
-    margin-bottom: 30px;
-    font-family: 'Caveat', cursive;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: Century Gothic;
+  color: #ff5d40;
+  margin-bottom: 30px;
+  font-family: "Caveat", cursive;
 }
 
 .eleftNote {
-    font-size: 18px;
-    color: #fff;
-    width: 90%;
-    margin-top: 20px;
-    font-family: Century Gothic;
+  font-size: 18px;
+  color: #fff;
+  width: 90%;
+  margin-top: 20px;
+  font-family: Century Gothic;
 }
 
 .firstE {
-    color: #ffff;
+  color: #ffff;
 }
 .secondE {
-    color: #fff;
+  color: #fff;
 }
-.thirdE{
-    color: #fff;
+.thirdE {
+  color: #fff;
 }
 
 .eRightContainer {
-    width: 40%;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  width: 40%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .skillContainer {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    font-family: Century Gothic;
-    font-family: 'Caveat', cursive;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  font-family: Century Gothic;
+  font-family: "Caveat", cursive;
 }
 
 .skillHeader {
-    color: #ff5d40;
-    font-size: 25px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    font-weight: 600;
-    font-family: Century Gothic;
-    font-family: 'Caveat', cursive;
-
+  color: #ff5d40;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-family: Century Gothic;
+  font-family: "Caveat", cursive;
 }
 .skillName {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 .progressContainer {
-    width: 400px;
-    background-color: #4b4b4b;
-    height: 2px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
+  width: 400px;
+  background-color: #4b4b4b;
+  height: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
 }
 .progressBar {
-    height: 100%;
-    border-radius: 5px;
+  height: 100%;
+  border-radius: 5px;
 }
 .progressLogoPink {
-    color: #D81E5B;
-    color: #ff5d40;
-    font-weight: 600;
-    font-family: Century Gothic;
-    cursor: pointer;
-    font-family: 'Caveat', cursive;
+  color: #d81e5b;
+  color: #ff5d40;
+  font-weight: 600;
+  font-family: Century Gothic;
+  cursor: pointer;
+  font-family: "Caveat", cursive;
 }
 .progressLogoBlue {
-    color: #29fcdc;
-    font-weight: 600;
-    font-family: Century Gothic;
-    cursor: pointer;
-    font-family: 'Caveat', cursive;
+  color: #29fcdc;
+  font-weight: 600;
+  font-family: Century Gothic;
+  cursor: pointer;
+  font-family: "Caveat", cursive;
 }
 
 .progressLogoAnimation {
-    animation: planimation 2s ease-in;
+  animation: planimation 2s ease-in;
 }
 
 @keyframes planimation {
-    from{left: 0%;}
+  from {
+    left: 0%;
+  }
 }
 
 .skillAnimation {
-    animation: sanimation 2s ease-in;
+  animation: sanimation 2s ease-in;
 }
 
 @keyframes sanimation {
-    from{width: 0%;}
+  from {
+    width: 0%;
+  }
 }
 
-.skillOne, .skillThree, .skillFive, .skillSeven {
-    color: #D81E5B;
-    color: #ff5d40;
-
+.html,
+.js,
+.tailwind,
+.express,
+.next,
+.firebase {
+  color: #d81e5b;
+  color: #ff5d40;
 }
-.skillOneBar{
-    background: linear-gradient(to left, #D81E5B,  #D7CF07);
-    width: 90%;
+.htmlBar {
+  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  width: 90%;
 }
-
-.skillTwo, .skillFour, .skillSix, .skillEight ,.skillNine {
-    color: #29fcdc;
-    color: #ff5d40;
+.css,
+.bootstrap,
+.node,
+.mongo,
+.react {
+  color: #29fcdc;
+  color: #ff5d40;
 }
-.skillTwoBar{
-    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
-    width: 80%;
-}
-
-.skillThreeBar{
-    background: linear-gradient(to left, #D81E5B,  #D7CF07);
-    width: 80%;
-}
-
-
-.skillFourBar{
-    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
-    width: 90%;
+.cssBar {
+  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  width: 90%;
 }
 
-
-.skillFiveBar{
-    background: linear-gradient(to left, #D81E5B,  #D7CF07);
-    width: 90%;
+.jsBar {
+  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  width: 85%;
 }
 
-.skillNineBar {
-    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
-    width: 80%;
+.bootstrapBar {
+  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  width: 90%;
 }
 
-.skillSixBar{
-    background: linear-gradient(to left, #D81E5B,  #D7CF07);
-    width: 20%;
+.tailwindBar {
+  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  width: 90%;
 }
 
-.skillSevenBar{
-    background: linear-gradient(to left, #ff5d40,  #D1F0B1);
-    width: 15%;
+.reactBar {
+  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  width: 85%;
 }
 
-.skillEightBar{
-    background: linear-gradient(to left, #D81E5B,  #D7CF07);
-    width: 20%;
+.nodeBar {
+  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  width: 60%;
 }
 
+.expressBar {
+  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  width: 55%;
+}
 
+.mongoBar {
+  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  width: 50%;
+}
+.nextBar {
+  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  width: 70%;
+}
+.firebaseBar {
+  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  width: 60%;
+}
 
 @media (max-width: 1005px) {
-    .experienceContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 100vh;
-    }
-    .eLeftContainer {
-        width: 65%;
-    }
-    .eRightContainer {
-        width: 65%;
-    }
-    .progressContainer {
-        width: 90%;
-    }
+  .experienceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .eLeftContainer {
+    width: 65%;
+  }
+  .eRightContainer {
+    width: 65%;
+  }
+  .progressContainer {
+    width: 90%;
+  }
 }
 
 @media (max-width: 700px) {
-    .eRightContainer {
-        width: 80%;
-    }
-    .progressContainer {
-        width: 90%;
-    }
-
+  .eRightContainer {
+    width: 80%;
+  }
+  .progressContainer {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
-    .eLeftContainer {
-        width: 70%;
-    }
-    .eleftHeader {
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .eleftNote {
-        font-size: 16px;
-    }
-    .eRightContainer {
-        width: 90%;
-    }
-    .progressContainer {
-        width: 90%;
-    }
+  .eLeftContainer {
+    width: 70%;
+  }
+  .eleftHeader {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .eleftNote {
+    font-size: 16px;
+  }
+  .eRightContainer {
+    width: 90%;
+  }
+  .progressContainer {
+    width: 90%;
+  }
 }
