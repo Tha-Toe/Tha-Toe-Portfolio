@@ -39,18 +39,18 @@ function Experience() {
       >
         <div className="eleftHeader">Skill & Experience</div>
         <div className="eleftNote firstE">
-          I started studying programming(web development) on October 16, 2021.
+          I started study programming(web development) since October 16, 2021.
         </div>
         <div className="eleftNote secondE">
           I'm junior React developer(front-end). I have hand-on experience in
           working with semantic Html, Css, Sass/Scss, Tailwind Css, Bootstrap,
-          Javascript, React Js, Next Js for front-end development. I have
-          learned Git Hub,Npm,Yarn, Restful Api, etc. which are important for
+          Material Ui Javascript, React Js, Next Js for front-end development. I
+          learned Git Hub, Npm, Yarn, Restful Api, etc. which are important for
           developers.
         </div>
         <div className="eleftNote thirdE">
-          Although I'm a front-end developer, I used to write a little about
-          back-end development like Node Js, Express Js. And I have used
+          Although I'm a front-end developer, I used to write back-end
+          development language like Node Js, Express Js. And I have used
           database like mongoDB, Firebase.
         </div>
       </div>
