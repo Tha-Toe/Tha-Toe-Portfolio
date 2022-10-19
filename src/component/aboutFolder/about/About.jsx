@@ -51,11 +51,12 @@ function About() {
         <div className="aboutMe">About Me</div>
         <p>
           I'm Tha Toe Saung, 20years old, junior React web developer with front
-          end development skills. And I have almost a year of experience.
+          end development skills. And I have more than a year of experience.
         </p>
         <p>
-          I live in Taungoo, Bago, Myanmar. The heighest university I attended
-          was second year,Geography specialization of Taungoo university.
+          I live in Taungoo, Bago, Myanmar. The heighest university that I
+          attended was second year,Geography specialization of Taungoo
+          university.
         </p>
         <p>
           I am passionate about leveraging my diverse backgrounds to decipher
@@ -73,7 +74,7 @@ function About() {
         >
           <a
             className="cvLink"
-            href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:333a35b0-424b-3824-ba58-21f7f89fb027"
+            href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:f38064ff-5ad4-442f-9bb9-9c674b2aa0c4"
           >
             <FontAwesomeIcon icon={faDownload} /> Download CV
           </a>
