@@ -1,243 +1,317 @@
 .mContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100vh;
 }
 .leftMContainer {
-    margin-right: 100px;
+  margin-right: 100px;
 }
 .orange {
-    color: #E15136;
+  color: #e15136;
 }
 .mNote {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.firstLine, .secondLine, .thirdLine {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+.firstLine,
+.secondLine,
+.thirdLine {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
-.first{
-    font-size: 80px;
-    font-weight: 500;
-    margin-bottom: 20px;
+.secondLine {
 }
-.second, .firstHi {
-    font-size: 90px;
-    font-weight: 600;
-    margin-bottom: 20px;
+
+.first {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.second,
+.firstHi {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.firstHi {
+  font-size: 70px;
+}
+.second {
 }
 .third {
-    font-size: 70px;
-    font-weight: 400;
-    margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
-
-
 .e {
-    display: inline-block;
+  display: inline-block;
 }
 
 .noteNameVisible {
-    margin-left: 3px;
-    display: inline-block;
-    position: relative;
-    font-family: Segoe Script;
-    font-family: 'Caveat', cursive;
-    color: #fff;
-    color: #ff5d40; 
-    text-shadow: 3px 1px #DC3606 , 7px 2px 5px #000; 
+  /* margin-left: 3px;
+  display: inline-block;
+  position: relative;
+  font-family: Segoe Script;
+  font-family: "Caveat", cursive;
+  color: #fff;
+      text-shadow: 3px 1px #DC3606 , 7px 2px 5px #000; 
+  color: #ff5d40; */
+
+  margin-left: 3px;
+  display: inline-block;
+  position: relative;
+  font-family: Segoe Script;
+  font-family: "Caveat", cursive;
+  font-family: "Satoshi";
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .noteVisible {
-    margin-left: 3px;
-    display: inline-block;
-    position: relative;
-    color: #fff;
-    color: #767676; 
-    color: rgb(194, 194, 194);
-    text-shadow: 5px 1px #DC3606 , 7px 2px 5px #000; 
-    font-family: Segoe Script;
-    font-family: 'Caveat', cursive;
- 
+  margin-left: 3px;
+  display: inline-block;
+  position: relative;
+
+  font-family: Segoe Script;
+  font-family: "Caveat", cursive;
+  font-family: "Satoshi";
+  color: "white";
 }
 .noteVisible:hover {
-    color: #ff5d40;
-    display: inline-block;
-    position: relative;
-    transform: scaleX(1.1) scaleY(.8) translateY(50px) rotate(30deg);
-    transition: transform .2s ease;
+  display: inline-block;
+  position: relative;
+  transform: scaleX(1.1) scaleY(0.8) translateY(50px) rotate(30deg);
+  transition: transform 0.2s ease;
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-
 
 .rightMContainer {
-    width: 400px;
+  width: 400px;
 }
-.rightMContainer{
+.rightMContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.one {
+  background-color: #f40000;
+  box-shadow: 1px 1px 20px -3px #f40000;
+}
+.two {
+  background-color: #f75200;
+  box-shadow: 1px 1px 20px -3px #f75200;
+}
+.three {
+  background-color: #f7e92d;
+  box-shadow: 1px 1px 20px -3px #f7e92d;
+}
+.four {
+  background-color: #00b700;
+  box-shadow: 1px 1px 20px -3px #00b700;
+}
+.five {
+  background-color: #0097f7;
+  box-shadow: 1px 1px 20px -3px #0097f7;
+}
+.six {
+  background-color: #000080;
+  box-shadow: 1px 1px 20px -3px #000080;
+}
+.seven {
+  background-color: #8100e2;
+  box-shadow: 1px 1px 20px -3px #8100e2;
+}
+
+@media (max-width: 1200px) {
+  .mContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-.one,.two,.three,.four,.five,.six,.seven {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-}
-
-.one{
-    background-color: #F40000;
-    box-shadow: 1px 1px 20px -3px #F40000;
-}
-.two{
-    background-color: #F75200;
-    box-shadow: 1px 1px 20px -3px #F75200;
-}
-.three{
-    background-color: #F7E92D;
-    box-shadow: 1px 1px 20px -3px #F7E92D;
-}
-.four{
-    background-color: #00B700;
-    box-shadow: 1px 1px 20px -3px #00B700;
-}
-.five{
-    background-color: #0097F7;
-    box-shadow: 1px 1px 20px -3px #0097F7;
-}
-.six{
-    background-color: #000080;
-    box-shadow: 1px 1px 20px -3px #000080;
-}
-.seven{
-    background-color: #8100E2;
-    box-shadow: 1px 1px 20px -3px #8100E2;
-}
-
-@media (max-width: 1105px) {
-    .mContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .leftMContainer {
-        margin-right: 0px;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .rightMContainer{
-        height: 20vh;
-    }
+  }
+  .leftMContainer {
+    margin-right: 0px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightMContainer {
+    height: 20vh;
+  }
 }
 
 @media (max-width: 700px) {
-    .mContainer {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin: 0 auto;
-    }
-    .first{
-        font-size: 65px;
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
-    .firstHi {
-        font-size: 75px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-    .second {
-        font-size: 75px;
-        font-weight: 600;
-        margin-bottom: 20px;
-
-    }
-    .third {
-        font-size: 60px;
-        font-weight: 400;
-    }
+  .mContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+  .first {
+    font-size: 65px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .firstHi {
+    font-size: 75px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .second {
+    font-size: 75px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .third {
+    font-size: 60px;
+    font-weight: 400;
+  }
 }
 @media (max-width: 550px) {
-    .first{
-        font-size: 60px;
-        font-weight: 600;
-        font-size: 3rem;
-    }
-    .firstHi {
-        font-size: 3.5rem;
-        font-weight: 600;
-    }
-    .second {
-        font-size: 55px;
-        font-size: 3.5rem;
-        font-weight: 600;
-    }
-    .third {
-        font-size: 50px;
-        font-weight: 500;
-        font-size: 2.5rem;
-    }
-    .rightMContainer {
-        width: 70%;
-    }
-    .one,.two,.three,.four,.five,.six,.seven {
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-    }
-    .noteNameVisible{
-        text-shadow: 2px 1px #DC3606 , 5px 2px 5px #000; 
-
-    }
-    .noteVisible{
-        text-shadow: 3px 1px #DC3606 , 5px 2px 5px #000; 
-    }
+  .first {
+    font-size: 60px;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .firstHi {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  .second {
+    font-size: 55px;
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  .third {
+    font-size: 50px;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  .rightMContainer {
+    width: 70%;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .first {
+    font-size: 50px;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .firstHi {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .second {
+    font-size: 55px;
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .third {
+    font-size: 50px;
+    font-weight: 500;
+    font-size: 2.3rem;
+  }
 }
 @media (max-width: 360px) {
-    .noteNameVisible{
-        text-shadow: 2px 1px #DC3606 , 5px 2px 5px #000; 
-
-    }
-    .noteVisible{
-        text-shadow: 3px 1px #DC3606 , 5px 2px 5px #000; 
-    }
-    .first{
-        font-size: 30px;
-        font-weight: 550;
-        font-size: 2.5rem;
-    }
-    .firstHi {
-        font-size: 30px;
-        font-weight: 600;
-        font-size: 3rem;
-    }
-    .second {
-        font-size: 30px;
-        font-weight: 600;
-        font-size: 2.5rem;
-    }
-    .third {
-        font-size: 25px;
-        font-weight: 400;
-        font-size: 2rem;
-    }
-    .rightMContainer {
-        width: 70%;
-    }
-    .one,.two,.three,.four,.five,.six,.seven {
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-    }
+  .first {
+    font-size: 30px;
+    font-weight: 550;
+    font-size: 2.5rem;
+  }
+  .firstHi {
+    font-size: 30px;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .second {
+    font-size: 30px;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  .third {
+    font-size: 25px;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .rightMContainer {
+    width: 70%;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 330px) {
+  .first {
+    font-size: 2rem;
+  }
+  .firstHi {
+    font-size: 2.5rem;
+  }
+  .second {
+    font-size: 2.2rem;
+  }
+  .third {
+    font-size: 25px;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .rightMContainer {
+    width: 70%;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
 }

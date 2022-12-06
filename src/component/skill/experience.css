@@ -19,9 +19,9 @@
   padding: 20px;
   height: auto;
   padding-bottom: 50px;
-  background-color: #2b2b2b;
+  background: #071527;
   box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
-  border-top: 10px solid #ff5d40;
+  border-top: 10px solid #4486dc;
   border-top-left-radius: 15%;
   border-bottom-right-radius: 15%;
 }
@@ -45,9 +45,12 @@
   font-size: 27px;
   font-weight: 600;
   font-family: Century Gothic;
-  color: #ff5d40;
   margin-bottom: 30px;
   font-family: "Caveat", cursive;
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .eleftNote {
@@ -95,6 +98,10 @@
   font-weight: 600;
   font-family: Century Gothic;
   font-family: "Caveat", cursive;
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .skillName {
   font-size: 20px;
@@ -115,12 +122,11 @@
   border-radius: 5px;
 }
 .progressLogoPink {
-  color: #d81e5b;
-  color: #ff5d40;
   font-weight: 600;
   font-family: Century Gothic;
   cursor: pointer;
   font-family: "Caveat", cursive;
+  color: #4486dc;
 }
 .progressLogoBlue {
   color: #29fcdc;
@@ -156,11 +162,10 @@
 .express,
 .next,
 .firebase {
-  color: #d81e5b;
-  color: #ff5d40;
+  color: #4486dc;
 }
 .htmlBar {
-  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
   width: 90%;
 }
 .css,
@@ -168,54 +173,57 @@
 .node,
 .mongo,
 .react {
-  color: #29fcdc;
-  color: #ff5d40;
+  color: #4fe0b5;
 }
 .cssBar {
-  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+
   width: 90%;
 }
 
 .jsBar {
-  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
+
   width: 85%;
 }
 
 .bootstrapBar {
-  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
   width: 90%;
 }
 
 .tailwindBar {
-  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
+
   width: 90%;
 }
 
 .reactBar {
-  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
   width: 85%;
 }
 
 .nodeBar {
-  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
+
   width: 60%;
 }
 
 .expressBar {
-  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
   width: 55%;
 }
 
 .mongoBar {
-  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
   width: 50%;
 }
 .nextBar {
-  background: linear-gradient(to left, #d81e5b, #d7cf07);
+  background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
   width: 70%;
 }
 .firebaseBar {
-  background: linear-gradient(to left, #ff5d40, #d1f0b1);
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
   width: 60%;
 }
 

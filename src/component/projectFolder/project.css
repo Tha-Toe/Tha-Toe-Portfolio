@@ -17,6 +17,12 @@
   font-weight: 600;
   margin-top: 20px;
   font-family: "Caveat", cursive;
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 250px;
+  text-align: center;
 }
 
 .projectList {
@@ -102,12 +108,12 @@
 }
 
 .pOneAnimation {
-  border-top: 10px solid #ff0000;
+  border-top: 10px solid #4486dc;
   position: relative;
   animation: pOne 0.5s ease-in;
 }
 .pThreeAnimation {
-  border-top: 10px solid #29fcdc;
+  border-top: 10px solid #4486dc;
   position: relative;
   animation: pOne 0.5s ease-in;
 }
@@ -123,7 +129,7 @@
 }
 
 .pTwoAnimation {
-  border-top: 10px solid #f2aa4c;
+  border-top: 10px solid #4486dc;
   animation: pTwo 0.5s ease-in;
   position: relative;
 }
@@ -131,7 +137,7 @@
 .pFourAnimation {
   animation: pTwo 0.5s ease-in;
   position: relative;
-  border-top: 10px solid #ff5d40;
+  border-top: 10px solid #4486dc;
 }
 
 @keyframes pTwo {

@@ -11,10 +11,14 @@
 .contactHeader {
   font-size: 35px;
   font-weight: 600;
-  color: #d81e5b;
-  color: #ff5d40;
   margin-bottom: 70px;
   font-family: "Caveat", cursive;
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 250px;
+  text-align: center;
 }
 .contactHeaderAnimation {
   animation: chv 0.5s ease-in;
@@ -73,9 +77,13 @@
 }
 
 .contactIcon {
-  color: #ff5d40;
   font-size: 28px;
   margin-right: 15px;
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #4fe0b5;
 }
 
 .contactNote {
@@ -131,7 +139,9 @@
 }
 .messageInput:focus {
   outline: none;
-  border-bottom: 2px solid #ff5d40;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #4fe0b5, #4486dc);
 }
 
 .msgBox {
@@ -146,7 +156,7 @@
   font-size: 18px;
 }
 .sendButton {
-  background-color: #ff5d40;
+  background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
   color: #fff;
   color: #000;
   border: none;

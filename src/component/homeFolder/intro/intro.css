@@ -1,18 +1,21 @@
 .introContainer {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #1d1d1d;
-    z-index: 6;
-    left: 0;
-    top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1d;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  background: #061222;
 }
 
 .introLogo {
-    height: 250px;
-    position: absolute;
+  height: 250px;
+  position: absolute;
+  filter: brightness(0) saturate(100%) invert(80%) sepia(34%) saturate(676%)
+    hue-rotate(104deg) brightness(91%) contrast(94%);
 }
