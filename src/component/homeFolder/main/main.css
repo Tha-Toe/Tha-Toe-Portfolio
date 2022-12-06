@@ -147,6 +147,9 @@
   box-shadow: 1px 1px 20px -3px #8100e2;
 }
 
+.light_mode_color_black {
+  color: black;
+}
 @media (max-width: 1200px) {
   .mContainer {
     display: flex;

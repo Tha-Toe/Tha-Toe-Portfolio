@@ -15,6 +15,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { useInView } from "react-intersection-observer";
+import { useSelector } from "react-redux";
 
 const creativeVariant = {
   initial: {
@@ -28,6 +29,7 @@ const creativeVariant = {
 };
 
 function Contact() {
+  const mode = useSelector((state) => state.mode.mode);
   const [hV, setHv] = useState(false);
   const [lV, setLv] = useState(false);
   const [rV, setRv] = useState(false);
@@ -62,49 +64,82 @@ function Contact() {
           className={`${"contactLeft"} ${lV ? "messageLeftAnimation" : ""}`}
           ref={leftRef}
         >
-          <div className={`${"messageHeaderContainer"} ${hV ? "" : ""}`}>
-            <div className="messageHeader">contact me with</div>
+          <div
+            className={`${"messageHeaderContainer"} ${
+              mode === "light" && "light_mode_color_black"
+            } ${hV ? "" : ""}`}
+          >
+            <div
+              className={`${"messageHeader"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
+            >
+              contact me with
+            </div>
             <motion.div
               variants={creativeVariant}
               animate="animate"
               initial="initial"
               transition={{ duration: 0.5, yoyo: Infinity }}
             >
-              <FontAwesomeIcon icon={faAnglesDown} className="headIcon" />
+              <FontAwesomeIcon
+                icon={faAnglesDown}
+                className={`${"headIcon"} ${
+                  mode === "light" && "light_mode_color_black"
+                }`}
+              />
             </motion.div>
           </div>
           <div className="contactNoteContainer">
             <FontAwesomeIcon icon={faPhone} className="contactIcon" />
-            <div className="contactNote">
+            <div
+              className={`${"contactNote"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
+            >
               <a href="tel:+959773159335">+959773159335</a>
             </div>
           </div>
           <div className="contactNoteContainer">
             <FontAwesomeIcon icon={faMapLocationDot} className="contactIcon" />
-            <div className="contactNote">Taungoo, Myanmar</div>
+            <div
+              className={`${"contactNote"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
+            >
+              Taungoo, Myanmar
+            </div>
           </div>
           <div className="contactNoteContainer">
             <FontAwesomeIcon icon={faEnvelope} className="contactIcon" />
-            <div className="contactNote">
+            <div
+              className={`${"contactNote"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
+            >
               <a href="mailto:thatoesaung510dev@gmail.com">
                 thatoesaung510dev@gmail.com
               </a>
             </div>
           </div>
           <div className="contactNoteContainer">
-            <FontAwesomeIcon icon={faFacebook} className="contactIcon" />
+            <FontAwesomeIcon icon={faFacebook} className={`${"contactIcon"}`} />
             <a
               href="https://www.facebook.com/tha.toe.906"
-              className="contactNote addressLink"
+              className={`${"contactNote addressLink"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
             >
               Tha Toe
             </a>
           </div>
           <div className="contactNoteContainer">
-            <FontAwesomeIcon icon={faTwitter} className="contactIcon" />
+            <FontAwesomeIcon icon={faTwitter} className={`${"contactIcon"}`} />
             <a
               href="https://twitter.com/ThaToeSaungDev?s=09"
-              className="contactNote addressLink"
+              className={`${"contactNote addressLink"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
             >
               Tha Toe Saung
             </a>
@@ -112,7 +147,9 @@ function Contact() {
           <div className="contactNoteContainer">
             <FontAwesomeIcon icon={faGithub} className="contactIcon" />
             <a
-              className="contactNote addressLink"
+              className={`${"contactNote addressLink"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
               href="https://github.com/Tha-Toe"
             >
               Tha-Toe
@@ -122,7 +159,9 @@ function Contact() {
             <FontAwesomeIcon icon={faLinkedinIn} className="contactIcon" />
             <a
               href="https://www.linkedin.com/in/tha-toe-saung-736a90238/"
-              className="contactNote addressLink"
+              className={`${"contactNote addressLink"} ${
+                mode === "light" && "light_mode_color_black"
+              }`}
             >
               Tha Toe Saung
             </a>
@@ -137,7 +176,11 @@ function Contact() {
             method="POST"
           >
             <div className="messageHeaderContainer">
-              <div className="messageHeader">
+              <div
+                className={`${"messageHeader"} ${
+                  mode === "light" && "light_mode_color_black"
+                }`}
+              >
                 Or you can send me direct message below
               </div>
               <motion.div
@@ -146,31 +189,44 @@ function Contact() {
                 initial="initial"
                 transition={{ duration: 0.5, yoyo: Infinity }}
               >
-                <FontAwesomeIcon icon={faAnglesDown} className="headIcon" />
+                <FontAwesomeIcon
+                  icon={faAnglesDown}
+                  className={`${"headIcon"} ${
+                    mode === "light" && "light_mode_color_black"
+                  }`}
+                />
               </motion.div>
             </div>
             <input
               type="text"
               name="name"
-              className="messageInput"
+              className={`${"messageInput"} ${
+                mode === "light" && "light_mode_input_bg_white"
+              }`}
               placeholder="Your Name"
             />
             <input
               type="email"
               name="email"
-              className="messageInput"
+              className={`${"messageInput"} ${
+                mode === "light" && "light_mode_input_bg_white"
+              }`}
               placeholder="Your Email"
             />
             <input
               type="text"
               name="subject"
-              className="messageInput"
+              className={`${"messageInput"} ${
+                mode === "light" && "light_mode_input_bg_white"
+              }`}
               placeholder="Subject"
             />
             <textarea
               type="text"
               name="message"
-              className="messageInput msgBox"
+              className={`${"messageInput msgBox"} ${
+                mode === "light" && "light_mode_input_bg_white"
+              }`}
               placeholder="message"
               rows="4"
               cols="50"

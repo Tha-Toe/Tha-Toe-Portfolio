@@ -10,12 +10,13 @@ import Intro from "./component/homeFolder/intro/Intro";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Thankyou from "./Thankyou";
-
+import { useSelector } from "react-redux";
 function App() {
   const [introShow, setIntroShow] = useState(true);
   setTimeout(() => {
     setIntroShow(false);
   }, 4000);
+  const mode = useSelector((state) => state.mode.mode);
 
   return (
     <>
@@ -30,13 +31,23 @@ function App() {
                   <Intro />
                 </AnimatePresence>
               ) : (
-                <div className="bodyContainer">
-                  <Navbar />
-                  <Home />
-                  <About />
-                  <Project />
-                  <Experience />
-                  <Contact />
+                <div
+                  className={`${"body"} ${
+                    mode === "light" && "light_mode_bg_white"
+                  }`}
+                >
+                  <div
+                    className={`${"bodyContainer"} ${
+                      mode === "light" && "light_mode_bg_white"
+                    }`}
+                  >
+                    <Navbar />
+                    <Home />
+                    <About />
+                    <Project />
+                    <Experience />
+                    <Contact />
+                  </div>
                 </div>
               )
             }

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 
 const scrollVariant = {
   initial: {
@@ -19,6 +20,7 @@ const scrollVariant = {
 };
 
 const Project = () => {
+  const mode = useSelector((state) => state.mode.mode);
   const [hoverOne, setHoverOne] = useState(false);
   const [hoverTwo, setHoverTwo] = useState(false);
   const [hoverThree, setHoverThree] = useState(false);
@@ -392,7 +394,9 @@ const Project = () => {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 7.4, yoyo: Infinity }}
-        className="scrollLeft"
+        className={`${"scrollLeft"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />
@@ -402,7 +406,9 @@ const Project = () => {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 7.4, yoyo: Infinity }}
-        className="scrollRight"
+        className={`${"scrollRight"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />

@@ -4,6 +4,7 @@ import "./experience.css";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 
 const scrollVariant = {
   initial: {
@@ -19,6 +20,7 @@ const scrollVariant = {
 };
 
 function Experience() {
+  const mode = useSelector((state) => state.mode.mode);
   const { ref: leftRef, inView: leftVisible } = useInView();
   const { ref: rightRef, inView: rightVisible } = useInView();
   const [leftTrueVisible, setLeftTrueVisible] = useState(false);
@@ -34,21 +36,33 @@ function Experience() {
       <div
         ref={leftRef}
         className={`${"eLeftContainer"} ${
-          leftTrueVisible ? "eLeftAnimation" : ""
-        }`}
+          mode === "light" && "light_mode_bg_white_card"
+        } ${leftTrueVisible ? "eLeftAnimation" : ""}`}
       >
         <div className="eleftHeader">Skill & Experience</div>
-        <div className="eleftNote firstE">
+        <div
+          className={`${"eleftNote firstE"} ${
+            mode === "light" && "light_mode_color_black"
+          }`}
+        >
           I started study programming(web development) since October 16, 2021.
         </div>
-        <div className="eleftNote secondE">
+        <div
+          className={`${"eleftNote secondE"} ${
+            mode === "light" && "light_mode_color_black"
+          }`}
+        >
           I'm junior React developer(front-end). I have hand-on experience in
           working with semantic Html, Css, Sass/Scss, Tailwind Css, Bootstrap,
           Material Ui Javascript, React Js, Next Js for front-end development. I
           learned Git Hub, Npm, Yarn, Restful Api, etc. which are important for
           developers.
         </div>
-        <div className="eleftNote thirdE">
+        <div
+          className={`${"eleftNote thirdE"} ${
+            mode === "light" && "light_mode_color_black"
+          }`}
+        >
           Although I'm a front-end developer, I used to write back-end
           development language like Node Js, Express Js. And I have used
           database like mongoDB, Firebase.
@@ -250,7 +264,9 @@ function Experience() {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 7.4, yoyo: Infinity }}
-        className="scrollLeft"
+        className={`${"scrollLeft"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />
@@ -260,7 +276,9 @@ function Experience() {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 7.4, yoyo: Infinity }}
-        className="scrollRight"
+        className={`${"scrollRight"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />

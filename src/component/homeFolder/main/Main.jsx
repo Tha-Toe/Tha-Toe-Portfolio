@@ -4,6 +4,7 @@ import { motion, transform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 
 const creativeVariant = {
   initial: {
@@ -30,6 +31,7 @@ const scrollVariant = {
 };
 
 function Main() {
+  const mode = useSelector((state) => state.mode.mode);
   const [hi] = useState(["H", "i", ","]);
   const [im] = useState(["I", "'", "m"]);
   const [tha] = useState(["T", "h", "a"]);
@@ -57,12 +59,15 @@ function Main() {
       setNoteVisible(true);
     }
   }, [mNoteVisible]);
-
   return (
     <div className="mContainer white">
       <div className="leftMContainer" ref={mNoteRef}>
         <div className="firstLine">
-          <motion.div className="mNote firstHi">
+          <motion.div
+            className={`${"mNote firstHi"} ${
+              mode === "light" && "light_mode_color_black"
+            }`}
+          >
             {hi.map((e, index) => (
               <motion.span
                 key={index}
@@ -105,7 +110,11 @@ function Main() {
               </motion.span>
             ))}
           </motion.div>
-          <motion.div className="mNote first">
+          <motion.div
+            className={`${"mNote first"} ${
+              mode === "light" && "light_mode_color_black"
+            }`}
+          >
             {im.map((e, index) => (
               <motion.span
                 key={index}
@@ -283,7 +292,11 @@ function Main() {
           </motion.div>
         </div>
         <div className="thirdLine">
-          <motion.div className="mNote third">
+          <motion.div
+            className={`${"mNote third"} ${
+              mode === "light" && "light_mode_color_black"
+            }`}
+          >
             {web.map((e, index) => (
               <motion.span
                 key={index}
@@ -326,7 +339,11 @@ function Main() {
               </motion.span>
             ))}
           </motion.div>
-          <motion.div className="mNote third">
+          <motion.div
+            className={`${"mNote third"} ${
+              mode === "light" && "light_mode_color_black"
+            }`}
+          >
             {developer.map((e, index) => (
               <motion.span
                 key={index}
@@ -427,7 +444,9 @@ function Main() {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 3.4, yoyo: Infinity }}
-        className="scrollLeft"
+        className={`${"scrollLeft"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />
@@ -437,7 +456,9 @@ function Main() {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 3.4, yoyo: Infinity }}
-        className="scrollRight"
+        className={`${"scrollRight"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />

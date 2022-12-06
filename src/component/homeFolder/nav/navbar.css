@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 .logoImg {
   width: 70px;
@@ -143,6 +144,62 @@
 .tMobileLogo {
   display: none;
 }
+
+.mode_button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.mode_button_mobile_container {
+  display: none;
+}
+.mode_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60px;
+  border-radius: 15px;
+  height: 30px;
+  background-color: #b6b4b4;
+  background-color: #4fe0b5;
+}
+.dark_button {
+  justify-content: flex-start;
+  background-color: #313131;
+  background-color: #194580e6;
+  background-color: #4486dc;
+}
+.mode_icon_container {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+}
+.dark_icon_container {
+  background-color: white;
+}
+.mode_icon {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-family: "Satoshi";
+}
+.light_mode_bg_white {
+  background-color: white;
+}
+.light_mode_color_black {
+  color: black;
+}
 @media (max-width: 1105px) {
   .nContainer {
     display: none;
@@ -156,6 +213,12 @@
   .logoImg {
     width: 70px;
     cursor: pointer;
+  }
+  .mode_button_mobile_container {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    z-index: 3;
   }
   .humbagarContainer {
     display: block;

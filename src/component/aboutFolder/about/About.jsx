@@ -5,6 +5,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 
 const scrollVariant = {
   initial: {
@@ -20,6 +21,7 @@ const scrollVariant = {
 };
 
 function About() {
+  const mode = useSelector((state) => state.mode.mode);
   const [leftTrueVisible, setLeftTrueVisible] = useState(false);
   const { ref: leftRef, inView: leftVisible } = useInView();
 
@@ -41,11 +43,18 @@ function About() {
         ref={leftRef}
         className={`${"leftAbout"} ${leftTrueVisible ? "leftAnimate" : ""}`}
       >
-        <img src="/myPhoto.png" className="myPhoto" />
+        <img
+          src="/myPhoto.png"
+          className={`${"myPhoto"} ${
+            mode === "light" && "light_mode_bg_white_card"
+          }`}
+        />
       </div>
       <div
         ref={rightRef}
-        className={` ${"rightAbout"} ${rightTrueVisible ? "rightAnimate" : ""}`}
+        className={` ${"rightAbout"} ${
+          mode === "light" && "light_mode_bg_white_card light_mode_color_black"
+        } ${rightTrueVisible ? "rightAnimate" : ""}`}
       >
         <div className="aboutHead">Who I am?</div>
         <div className="aboutMe">About Me</div>
@@ -85,7 +94,9 @@ function About() {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 7.4, yoyo: Infinity }}
-        className="scrollLeft"
+        className={`${"scrollLeft"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />
@@ -95,7 +106,9 @@ function About() {
         animate="animate"
         initial="initial"
         transition={{ duration: 0.5, delay: 7.4, yoyo: Infinity }}
-        className="scrollRight"
+        className={`${"scrollRight"} ${
+          mode === "light" && "light_mode_color_black"
+        }`}
       >
         scroll
         <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />

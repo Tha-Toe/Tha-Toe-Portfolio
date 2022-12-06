@@ -181,7 +181,14 @@
 .addressLink:hover {
   color: blue;
 }
-
+.light_mode_input_bg_white {
+  background-color: white;
+  border: 1px solid #a09f9f;
+  color: black;
+}
+.light_mode_color_black {
+  color: black;
+}
 @media (max-width: 1005px) {
   .contactContainer {
     display: flex;

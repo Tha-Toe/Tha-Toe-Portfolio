@@ -226,7 +226,13 @@
   background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
   width: 60%;
 }
-
+.light_mode_bg_white_card {
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+}
+.light_mode_color_black {
+  color: black;
+}
 @media (max-width: 1005px) {
   .experienceContainer {
     display: flex;
