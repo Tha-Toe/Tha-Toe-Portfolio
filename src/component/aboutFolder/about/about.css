@@ -1,142 +1,156 @@
 .aboutContainer {
-    color: #fff;
-    font-family: Segoe Script;
-    font-family: Century Gothic;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    max-width: 1200px;
-    min-height: 100vh;
-    margin: 0px auto;
-    padding: 20px;
-    position: relative;
+  color: #fff;
+  font-family: Segoe Script;
+  font-family: Century Gothic;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
 }
 .leftAbout {
-    position: relative;
-    margin-right: 100px;
+  position: relative;
+  margin-right: 100px;
 }
 
 .leftAnimate {
-    animation: lAni .7s ease-in;
+  animation: lAni 0.7s ease-in;
 }
 /*
 @keyframes lAni {
-    0%{opacity: 0; transform: translateX(-200px);}
-    60%{opacity: 1;transform: translateX(0);}
-    80%{transform: translateX(20px)}
-    100%{transform: translateX(0)}
+  0%{opacity: 0; transform: translateX(-200px);}
+  60%{opacity: 1;transform: translateX(0);}
+  80%{transform: translateX(20px)}
+  100%{transform: translateX(0)}
 }
 */
 @keyframes lAni {
-    0%{opacity: 0; left: -200px;}
-    100%{left: 0px;}
+  0% {
+    opacity: 0;
+    left: -200px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 .rightAnimate {
-    animation: rAni .7s ease-in;
-    position: relative;
+  animation: rAni 0.7s ease-in;
+  position: relative;
 }
 /*
 @keyframes rAni {
-    0%{opacity: 0; transform: translateX(200px);}
-    60%{opacity: 1;transform: translateX(0);}
-    80%{transform: translateX(20px)}
-    100%{transform: translateX(0)}
+  0%{opacity: 0; transform: translateX(200px);}
+  60%{opacity: 1;transform: translateX(0);}
+  80%{transform: translateX(20px)}
+  100%{transform: translateX(0)}
 }
 */
 @keyframes rAni {
-    0%{opacity: 0; left: -200px;}
-    100%{left: 0px;}
+  0% {
+    opacity: 0;
+    left: -200px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 .myPhoto {
-    width: 450px;
-    border-top: 10px solid #29FCDC;
-    border-top: 10px solid #ff5d40;
-    background-color: #2b2b2b;
-    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+  width: 450px;
+  border-top: 10px solid #29fcdc;
+  border-top: 10px solid #ff5d40;
+  background-color: #2b2b2b;
+  box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 .rightAbout {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 400px;
-    background-color: #2b2b2b;
-    padding: 25px;
-    border-top: 10px solid #29fcdc;
-    border-top: 10px solid #ff5d40;
-    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  background-color: #2b2b2b;
+  padding: 25px;
+  border-top: 10px solid #29fcdc;
+  border-top: 10px solid #ff5d40;
+  box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+  position: relative;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 20%;
 }
 .aboutHead {
-    color: #ff5d40;
-    font-size: 20px;
+  color: #ff5d40;
+  font-size: 20px;
 }
 
 .aboutMe {
-    font-size: 23px;
-    font-weight: 600;
-    margin-top: 20px;
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 .cvButton {
-    background-color: #ff5d40;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 550;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: #ff5d40;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 550;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 .cvLink {
-    color: #2b2b2b;
-    text-decoration: none;
+  color: #2b2b2b;
+  text-decoration: none;
 }
 
 @media (max-width: 1155px) {
-
-
-    .aboutContainer {
-    }
-    .leftAbout {
-        margin: 0 auto;
-    }
-    .rightAbout {
-        margin: 0 auto;
-    }
-    .myPhoto {
-        margin-bottom: 50px;
-    }
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .leftAbout {
+    margin: 0 auto;
+  }
+  .rightAbout {
+    margin: 0 auto;
+  }
+  .myPhoto {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 700px) {
-    .myPhoto {
-        width: 350px;
-    }
-    .rightAbout {
-        width: 400px;
-    }
-
+  .myPhoto {
+    width: 400px;
+  }
+  .rightAbout {
+    width: 400px;
+  }
 }
 @media (max-width: 500px) {
-    .myPhoto {
-        width: 250px;
-    }
-    .rightAbout {
+  .myPhoto {
+    width: 300px;
+  }
+  .rightAbout {
     width: 300px;
     padding: 20px;
-    }
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 10%;
+  }
 }
 @media (max-width: 350px) {
-    .myPhoto {
-        width: 200px;
-    }
-    .rightAbout {
-        width: 200px;
-    }
+  .myPhoto {
+    width: 200px;
+  }
+  .rightAbout {
+    width: 200px;
+  }
 }

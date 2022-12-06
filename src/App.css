@@ -1,50 +1,44 @@
 body {
-    /* background-color: #262626; */
-    background-color: #333232;
-    background-color: #262626;
-
+  /* background-color: #262626; */
+  background-color: #333232;
+  background-color: #262626;
 }
 
-.bodyContainer{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.bodyContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .white {
-    color: #fff;
+  color: #fff;
 }
 
-
-.scrollLeft{
-    position: absolute;
-    left: 0;
-    top: 80%;
-    color: #fff;
-    font-family: Lucida Handwriting;
-    font-family: 'Caveat', cursive;
-    font-size: 1.5rem;
+.scrollLeft {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  color: #fff;
+  font-family: Lucida Handwriting;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
 }
 
-
-.scrollRight{
-    position: absolute;
-    right: 0;
-    top: 80%;
-    color: #fff;
-    font-family: Lucida Handwriting;
-    font-family: 'Caveat', cursive;
-    font-size: 1.5rem;
+.scrollRight {
+  position: absolute;
+  right: 0;
+  top: 80%;
+  color: #fff;
+  font-family: Lucida Handwriting;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
 }
-@media (max-width:400px) {
-    .scrollLeft{
-        font-size: 1rem;
-
-    }
-    .scrollRight{
-        font-size: 1rem;
-
-    }
+@media (max-width: 400px) {
+  .scrollLeft {
+    font-size: 1rem;
+  }
+  .scrollRight {
+    font-size: 1rem;
+  }
 }
