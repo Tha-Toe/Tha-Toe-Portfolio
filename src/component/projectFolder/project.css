@@ -263,8 +263,8 @@
 
 @media (max-width: 350px) {
   .projectImg {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
   .projectList {
     display: flex;
@@ -274,18 +274,18 @@
   .hoverLeft {
     height: 900px;
     position: absolute;
-    transform: rotate(-30deg) translateX(-120px) translateY(-90px);
+    transform: rotate(-30deg) translateX(-110px) translateY(-90px);
   }
   .hoverRight {
     height: 900px;
     position: absolute;
-    transform: rotate(-30deg) translateX(450px) translateY(-90px);
+    transform: rotate(-30deg) translateX(435px) translateY(-90px);
   }
 
   .hoverLeftStart {
-    transform: rotate(-30deg) translateX(450px) translateY(-90px);
+    transform: rotate(-30deg) translateX(435px) translateY(-90px);
   }
   .hoverRightStart {
-    transform: rotate(-30deg) translateX(-120px) translateY(-90px);
+    transform: rotate(-30deg) translateX(-110px) translateY(-90px);
   }
 }

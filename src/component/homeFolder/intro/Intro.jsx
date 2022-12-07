@@ -30,17 +30,16 @@ function Intro() {
   return (
     <motion.div className="introContainer" exit={{ opacity: 0 }}>
       <svg
-        className="introBorder"
+        className="introBorder feather feather-hexagon"
         xmlns="http://www.w3.org/2000/svg"
         width="250"
         height="350"
         viewBox="0 0 24 24"
         fill="none"
         stroke="#4fe0b5"
-        stroke-width=".5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-hexagon"
+        strokeWidth=".5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <motion.path
           d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"

@@ -325,9 +325,8 @@ const Project = () => {
               transition: `all .4s ease`,
             }}
           >
-            <div className="projectName">
-              Yell Min Oo(3D charater artist) portfolio
-            </div>
+            <div className="projectName">Yell Min Oo's portfolio</div>
+            <div className="projectName">(3D charater artist)</div>
             <div className="projectDetail">
               This is client Yell Min Oo portfolio project. He is famous 3D
               charater artist from Myanmar. I used Next js and firebase for his

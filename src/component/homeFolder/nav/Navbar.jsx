@@ -191,7 +191,10 @@ function Navbar() {
           }}
         />
       </motion.div>
-      <div
+      <motion.div
+        variants={containerVariant}
+        initial="hidden"
+        animate="containerVisible"
         className={`${"mode_button_mobile_container"} ${
           mode === "dark" && "dark_container"
         }`}
@@ -218,7 +221,7 @@ function Navbar() {
             )}
           </div>
         </div>
-      </div>
+      </motion.div>
       <motion.div
         className="humbagarContainer"
         variants={humbagarVariant}
@@ -287,7 +290,6 @@ function Navbar() {
               }`}
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              s
             >
               Contact
             </a>
