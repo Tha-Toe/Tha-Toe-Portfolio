@@ -101,8 +101,10 @@ function Navbar() {
             onClick={() => {
               if (mode === "dark") {
                 dispatch(changeMode());
+                localStorage.setItem("mode", "light");
               } else {
                 dispatch(changeMode());
+                localStorage.setItem("mode", "dark");
               }
             }}
           >
@@ -204,8 +206,10 @@ function Navbar() {
           onClick={() => {
             if (mode === "dark") {
               dispatch(changeMode());
+              localStorage.setItem("mode", "light");
             } else {
               dispatch(changeMode());
+              localStorage.setItem("mode", "dark");
             }
           }}
         >

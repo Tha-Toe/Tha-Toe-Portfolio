@@ -12,6 +12,9 @@
   top: 0;
   background: #061222;
 }
+.intro_light_white_bg {
+  background-color: #fff;
+}
 
 .introLogo {
   height: 250px;

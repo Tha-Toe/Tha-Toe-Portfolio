@@ -1,6 +1,7 @@
 import React from "react";
 import "./intro.css";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const logoVariants = {
   initial: {
@@ -27,8 +28,15 @@ const pathVariant = {
   },
 };
 function Intro() {
+  let mode = useSelector((state) => state.mode.mode);
+
   return (
-    <motion.div className="introContainer" exit={{ opacity: 0 }}>
+    <motion.div
+      className={`${"introContainer"} ${
+        mode === "light" && "intro_light_white_bg"
+      }`}
+      exit={{ opacity: 0 }}
+    >
       <svg
         className="introBorder feather feather-hexagon"
         xmlns="http://www.w3.org/2000/svg"

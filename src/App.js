@@ -7,16 +7,26 @@ import Contact from "./component/contactFolder/Contact";
 import Navbar from "./component/homeFolder/nav/Navbar";
 import { AnimatePresence } from "framer-motion";
 import Intro from "./component/homeFolder/intro/Intro";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Thankyou from "./Thankyou";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { changeModeWithColor } from "./store/slice";
 function App() {
   const [introShow, setIntroShow] = useState(true);
+  const dispatch = useDispatch();
   setTimeout(() => {
     setIntroShow(false);
   }, 4000);
   const mode = useSelector((state) => state.mode.mode);
+  useEffect(() => {
+    let modeFromLocalStorage = localStorage.getItem("mode");
+    if (modeFromLocalStorage === "dark") {
+      dispatch(changeModeWithColor("dark"));
+    } else if (modeFromLocalStorage === "light") {
+      dispatch(changeModeWithColor("light"));
+    }
+  }, []);
 
   return (
     <>

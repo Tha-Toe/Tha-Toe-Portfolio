@@ -15,10 +15,13 @@ export const modeSlice = createSlice({
         state.mode = "dark";
       }
     },
+    changeModeWithColor: (state, action) => {
+      state.mode = action.payload;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { changeMode } = modeSlice.actions;
+export const { changeMode, changeModeWithColor } = modeSlice.actions;
 
 export default modeSlice.reducer;
