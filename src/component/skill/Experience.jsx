@@ -105,7 +105,7 @@ function Experience() {
           </div>
         </div>
         <div className="skillContainer">
-          <div className="skillName js">Javascript</div>
+          <div className="skillName js">Javascript/TypeScript</div>
           <div className="progressContainer">
             <div
               className={`${"progressBar"} ${"jsBar"} ${

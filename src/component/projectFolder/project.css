@@ -95,52 +95,13 @@
   height: 450px;
 }
 
-.imgOne {
-}
-
-.imgTwo {
-}
-
-.imgThree {
-}
-
-.imgFour {
-}
-
 .pOneAnimation {
-  border-top: 10px solid #4486dc;
-  position: relative;
-  animation: pOne 0.5s ease-in;
-}
-.pThreeAnimation {
   border-top: 10px solid #4486dc;
   position: relative;
   animation: pOne 0.5s ease-in;
 }
 
 @keyframes pOne {
-  0% {
-    opacity: 0;
-    left: -200px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-
-.pTwoAnimation {
-  border-top: 10px solid #4486dc;
-  animation: pTwo 0.5s ease-in;
-  position: relative;
-}
-
-.pFourAnimation {
-  animation: pTwo 0.5s ease-in;
-  position: relative;
-  border-top: 10px solid #4486dc;
-}
-
-@keyframes pTwo {
   0% {
     opacity: 0;
     left: -200px;
