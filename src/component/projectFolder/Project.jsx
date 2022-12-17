@@ -107,7 +107,7 @@ const Project = () => {
       id: 5,
       projectName: "Yankee Social",
       projectDetail:
-        "This is Yankee social media website. I used React js, Scss/Sass and MongoDb for this social media.",
+        "This is Yankee social media website. I used React js and Scss/Sass for front-end, node js and express js for backend, MongoDb for database.",
       projectImage: "/yankee1.png",
       projectLink: "https://yankee.vercel.app",
     },

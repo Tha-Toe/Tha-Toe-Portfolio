@@ -67,6 +67,15 @@ function Experience() {
           development language like Node Js, Express Js. And I have used
           database like mongoDB, Firebase.
         </div>
+        <div
+          className={`${"eleftNote thirdE"} ${
+            mode === "light" && "light_mode_color_black"
+          }`}
+        >
+          As work experience, I have compeleted a three-month internship as a
+          front end developer in World of Professional Singapore company. And
+          now I'm working as a full time developer there.
+        </div>
       </div>
       <div className="eRightContainer" ref={rightRef}>
         <div className="skillHeader">Front End Development</div>

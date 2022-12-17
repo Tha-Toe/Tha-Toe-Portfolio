@@ -21,4 +21,6 @@
   position: absolute;
   filter: brightness(0) saturate(100%) invert(80%) sepia(34%) saturate(676%)
     hue-rotate(104deg) brightness(91%) contrast(94%);
+  filter: invert(50%) sepia(98%) saturate(525%) hue-rotate(166deg)
+    brightness(123%) contrast(96%);
 }

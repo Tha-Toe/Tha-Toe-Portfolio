@@ -8,6 +8,8 @@
   z-index: 3;
   background-color: rgba(6, 18, 34, 0.9);
   border-bottom: 2px solid;
+  border-bottom: 0px;
+  border-color: #4bbec4;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #4486dc, #4fe0b5);
   padding-left: 20px;
@@ -27,14 +29,16 @@
   width: 70px;
   border-radius: 60px;
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(80%) sepia(34%) saturate(676%)
-    hue-rotate(104deg) brightness(91%) contrast(94%);
+  color: #53b7fa;
+
+  filter: invert(50%) sepia(98%) saturate(525%) hue-rotate(166deg)
+    brightness(123%) contrast(96%);
 }
 
 .navChild {
-  padding: 20px;
+  padding: 40px 15px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: none;
   color: #fff;
@@ -89,8 +93,10 @@
   border-radius: 60px;
   cursor: pointer;
   margin-top: 50px;
-  filter: brightness(0) saturate(100%) invert(80%) sepia(34%) saturate(676%)
-    hue-rotate(104deg) brightness(91%) contrast(94%);
+  color: #53b7fa;
+
+  filter: invert(50%) sepia(98%) saturate(525%) hue-rotate(166deg)
+    brightness(123%) contrast(96%);
 }
 .menuHide {
   opacity: 0;
@@ -150,7 +156,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+  margin-right: 50px;
   cursor: pointer;
 }
 .mode_button_mobile_container {

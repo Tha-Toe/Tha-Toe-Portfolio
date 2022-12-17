@@ -51,6 +51,8 @@ function Contact() {
     }
   }, [headVisible, leftVisible, rightVisible]);
 
+  const postMessage = () => {};
+
   return (
     <div id="contact" className="contactMainContainer">
       <div

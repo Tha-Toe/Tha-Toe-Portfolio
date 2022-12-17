@@ -44,7 +44,7 @@ function Intro() {
         height="350"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#4fe0b5"
+        stroke="#53b7fa"
         strokeWidth=".5"
         strokeLinecap="round"
         strokeLinejoin="round"
