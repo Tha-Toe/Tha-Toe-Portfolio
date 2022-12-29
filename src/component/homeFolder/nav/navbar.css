@@ -204,7 +204,7 @@
   background-color: white;
 }
 .light_mode_color_black {
-  color: black;
+  color: #494949;
 }
 @media (max-width: 1105px) {
   .nContainer {

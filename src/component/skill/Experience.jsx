@@ -52,10 +52,10 @@ function Experience() {
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          I'm junior React developer(front-end). I have hand-on experience in
-          working with semantic Html, Css, Sass/Scss, Tailwind Css, Bootstrap,
-          Material Ui Javascript, React Js, Next Js for front-end development. I
-          learned Git Hub, Npm, Yarn, Restful Api, etc. which are important for
+          I'm React developer(frontend). I have hand-on experience in working
+          with semantic Html, Css, Sass/Scss, Tailwind Css, Bootstrap, Material
+          Ui Javascript, React Js, Next Js for front-end development. I learned
+          Git Hub, Npm, Yarn, Restful Api, etc. which are important for
           developers.
         </div>
         <div
@@ -65,16 +65,16 @@ function Experience() {
         >
           Although I'm a front-end developer, I used to write back-end
           development language like Node Js, Express Js. And I have used
-          database like mongoDB, Firebase.
+          database like MongoDB, Firebase, MySQL.
         </div>
         <div
           className={`${"eleftNote thirdE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          As work experience, I have compeleted a three-month internship as a
+          As work experience, I had compeleted a three-month internship as a
           front end developer in World of Professional Singapore company. And
-          now I'm working as a full time developer there.
+          I'm working as a full time developer there.
         </div>
       </div>
       <div className="eRightContainer" ref={rightRef}>
@@ -264,6 +264,23 @@ function Experience() {
               dragConstraints={{ right: 0, left: 0 }}
             >
               F
+            </motion.div>
+          </div>
+        </div>
+        <div className="skillContainer">
+          <div className="skillName mongo">MySQL</div>
+          <div className="progressContainer">
+            <div
+              className={`${"progressBar"} ${"mongoBar"} ${
+                rightVisible ? "skillAnimation" : ""
+              }`}
+            ></div>
+            <motion.div
+              className="progressLogoPink"
+              drag="x"
+              dragConstraints={{ right: 0, left: 0 }}
+            >
+              MS
             </motion.div>
           </div>
         </div>
