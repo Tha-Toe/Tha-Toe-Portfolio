@@ -99,7 +99,12 @@ function About() {
         }`}
       >
         scroll
-        <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />
+        <FontAwesomeIcon
+          icon={faAnglesRight}
+          className={`${"headIcon"} ${
+            mode === "light" && "light_mode_color_black"
+          }`}
+        />
       </motion.div>
       <motion.div
         variants={scrollVariant}
@@ -111,7 +116,12 @@ function About() {
         }`}
       >
         scroll
-        <FontAwesomeIcon icon={faAnglesRight} className="headIcon" />
+        <FontAwesomeIcon
+          icon={faAnglesRight}
+          className={`${"headIcon"} ${
+            mode === "light" && "light_mode_color_black"
+          }`}
+        />
       </motion.div>
     </div>
   );
