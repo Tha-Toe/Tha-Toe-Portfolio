@@ -80,11 +80,11 @@ const Project = () => {
     },
     {
       id: 2,
-      projectName: "Memory Game Project",
+      projectName: "Music World",
       projectDetail:
-        "              This is memory game project. I create it to get some knowledge and logic. It is simple and short time. I hope you enjoy it.",
-      projectImage: "/gameP.PNG",
-      projectLink: "https://minigame-v3.vercel.app",
+        "This is my own music player web application. You can play,save and upload song free. I hope you enjoy it",
+      projectImage: "/music_world.png",
+      projectLink: "https://music-world-web.vercel.app",
     },
     {
       id: 3,
@@ -150,7 +150,9 @@ const Project = () => {
               }}
             >
               <div className="projectName">{each.projectName}</div>
-              <div className="projectName">{each.projectName2}</div>
+              <div className="projectName projectName2">
+                {each.projectName2}
+              </div>
               <div className="projectDetail">{each.projectDetail}</div>
               <a href={each.projectLink} target="_blank">
                 <button className="projectButton">View Project</button>

@@ -166,7 +166,7 @@
 }
 .htmlBar {
   background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
-  width: 90%;
+  width: 95%;
 }
 .css,
 .bootstrap,
@@ -200,18 +200,18 @@
 
 .reactBar {
   background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
-  width: 85%;
+  width: 95%;
 }
 
 .nodeBar {
   background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
 
-  width: 60%;
+  width: 70%;
 }
 
 .expressBar {
   background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
-  width: 55%;
+  width: 70%;
 }
 
 .mongoBar {
@@ -220,11 +220,11 @@
 }
 .nextBar {
   background: linear-gradient(93.25deg, #4fe0b5 9.29%, #4486dc 75.09%);
-  width: 70%;
+  width: 85%;
 }
 .firebaseBar {
   background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
-  width: 60%;
+  width: 90%;
 }
 .light_mode_bg_white_card {
   background-color: white;
