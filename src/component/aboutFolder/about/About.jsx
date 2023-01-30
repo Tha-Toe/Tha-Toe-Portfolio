@@ -58,16 +58,16 @@ function About() {
       >
         <div className="aboutHead">Who I am?</div>
         <div className="aboutMe">About Me</div>
-        <p>
+        <p className="about_text">
           I'm Tha Toe Saung, 20years old, junior React web developer with front
           end development skills. And I have more than a year of experience.
         </p>
-        <p>
+        <p className="about_text">
           I live in Taungoo, Bago, Myanmar. The heighest university that I
           attended was second year,Geography specialization of Taungoo
           university.
         </p>
-        <p>
+        <p className="about_text">
           I am passionate about leveraging my diverse backgrounds to decipher
           challenging problems and create delightful experiences. I honed my
           skills at web development.

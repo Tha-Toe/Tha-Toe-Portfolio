@@ -126,6 +126,10 @@
   background-color: white;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
 }
+
+.about_text {
+  font-size: 16px;
+}
 @media (max-width: 1155px) {
   .aboutContainer {
     flex-direction: column;
@@ -159,8 +163,20 @@
     border-top-left-radius: 5%;
     border-bottom-right-radius: 10%;
   }
+  .about_text {
+    font-size: 14px;
+  }
+  .cvButton {
+    font-size: 14px;
+  }
 }
 @media (max-width: 350px) {
+  .about_text {
+    font-size: 12px;
+  }
+  .cvButton {
+    font-size: 12px;
+  }
   .myPhoto {
     width: 200px;
   }
