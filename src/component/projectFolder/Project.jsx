@@ -100,7 +100,7 @@ const Project = () => {
       projectName2: "(3D charater artist)",
       projectDetail:
         "This is client Yell Min Oo portfolio project. He is famous 3D charater artist from Myanmar. I used Next js and firebase for his portfolio.",
-      projectImage: "/yellminoo-client1.png",
+      projectImage: "/yellminoo-client2.png",
       projectLink: "https://yellminoo.vercel.app",
     },
     {
@@ -123,7 +123,7 @@ const Project = () => {
 
   return (
     <div className="projectContainer" id="project">
-      <div className="projectHeader">My Project</div>
+      <div className="projectHeader">My Projects (6)</div>
       <div className="projectList" ref={cardRef}>
         {projectList.map((each, index) => (
           <div
@@ -155,7 +155,7 @@ const Project = () => {
               </div>
               <div className="projectDetail">{each.projectDetail}</div>
               <a href={each.projectLink} target="_blank">
-                <button className="projectButton">View Project</button>
+                <button className="projectButton">Go to website</button>
               </a>
             </div>
             <div

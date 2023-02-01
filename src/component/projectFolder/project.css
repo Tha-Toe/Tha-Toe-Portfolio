@@ -93,6 +93,7 @@
 .projectImg {
   width: 450px;
   height: 450px;
+  object-fit: cover;
 }
 
 .pOneAnimation {
@@ -185,24 +186,25 @@
     height: 300px;
   }
   .projectList {
+    margin-top: 50px;
   }
   .projectName {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .projectButton {
     background: linear-gradient(90deg, #a730aa, #5b46a8);
     padding: 10px 15px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
   }
   .projectDetail {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 25px;
-    width: 80%;
+    width: 70%;
   }
   .hoverLeft {
     height: 900px;
@@ -250,5 +252,11 @@
   }
   .hoverRightStart {
     transform: rotate(-30deg) translateX(-110px) translateY(-90px);
+  }
+  .projectName {
+    margin-bottom: 15px;
+  }
+  .projectDetail {
+    margin-bottom: 10px;
   }
 }

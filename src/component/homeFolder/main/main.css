@@ -18,6 +18,9 @@
 .mNote {
   font-family: "Montserrat", sans-serif;
 }
+.web_text {
+  margin-right: 10px;
+}
 .firstLine,
 .secondLine,
 .thirdLine {
@@ -46,7 +49,7 @@
 .second {
 }
 .third {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -192,7 +195,7 @@
     margin-bottom: 20px;
   }
   .third {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 400;
   }
 }
@@ -212,9 +215,9 @@
     font-weight: 600;
   }
   .third {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .rightMContainer {
     width: 70%;
@@ -247,9 +250,9 @@
     font-weight: 600;
   }
   .third {
-    font-size: 50px;
+    font-size: 10px;
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 360px) {
@@ -271,7 +274,7 @@
   .third {
     font-size: 25px;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .rightMContainer {
     width: 70%;
@@ -301,7 +304,7 @@
   .third {
     font-size: 25px;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .rightMContainer {
     width: 70%;

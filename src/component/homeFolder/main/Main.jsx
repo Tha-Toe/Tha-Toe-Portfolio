@@ -37,9 +37,9 @@ function Main() {
   const [tha] = useState(["T", "h", "a"]);
   const [toe] = useState(["T", "o", "e"]);
   const [saung] = useState(["S", "a", "u", "n", "g", ","]);
-  const [web] = useState(["w", "e", "b"]);
+  const [web] = useState(["W", "e", "b"]);
   const [developer] = useState([
-    " d",
+    " D",
     "e",
     "v",
     "e",
@@ -293,7 +293,7 @@ function Main() {
         </div>
         <div className="thirdLine">
           <motion.div
-            className={`${"mNote third"} ${
+            className={`${"mNote third web_text"} ${
               mode === "light" && "light_mode_color_black"
             }`}
           >
