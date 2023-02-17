@@ -55,8 +55,8 @@ function Experience() {
           I'm React developer(frontend). I have hand-on experience in working
           with semantic Html, Css, Sass/Scss, Tailwind Css, Bootstrap, Material
           Ui Javascript, React Js, Next Js for front-end development. I learned
-          Git Hub, Npm, Yarn, Restful Api, etc. which are important for
-          developers.
+          Git Hub, Npm, Yarn, Restful Api, GraphQL server etc. which are
+          important for developers.
         </div>
         <div
           className={`${"eleftNote thirdE"} ${
