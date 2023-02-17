@@ -250,7 +250,7 @@ function Navbar() {
       >
         <div className={`${"menuStatic"} ${menuOpen ? "menuAnimate" : ""}`}>
           <img src="/innerLogo.png" className="menulogoImg" />
-          <div className="webDeveloper">Web Developer(front end)</div>
+          <div className="webDeveloper">Web Developer</div>
           <div className="humbagarListContainer">
             <a
               className={`${"humbagarList"} ${
@@ -277,7 +277,7 @@ function Navbar() {
               href="#project"
               onClick={() => setMenuOpen(false)}
             >
-              Project
+              Projects
             </a>
             <a
               className={`${"humbagarList"} ${
@@ -286,7 +286,7 @@ function Navbar() {
               href="#skill"
               onClick={() => setMenuOpen(false)}
             >
-              Skill
+              Skills
             </a>
             <a
               className={`${"humbagarList"} ${
@@ -295,7 +295,7 @@ function Navbar() {
               href="#contact"
               onClick={() => setMenuOpen(false)}
             >
-              Contact
+              Contact Me
             </a>
           </div>
         </div>

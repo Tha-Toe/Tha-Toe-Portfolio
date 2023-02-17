@@ -90,7 +90,7 @@ const Project = () => {
       id: 3,
       projectName: "Koin Wise",
       projectDetail:
-        "Koin Wise is company project. I used react js to build it.",
+        "Koin Wise is company project. I used React JS to build it.",
       projectImage: "/koinwiseP.png",
       projectLink: "https://koinwise.netlify.app",
     },
@@ -99,7 +99,7 @@ const Project = () => {
       projectName: "Yell Min Oo's portfolio",
       projectName2: "(3D charater artist)",
       projectDetail:
-        "This is client Yell Min Oo portfolio project. He is famous 3D charater artist from Myanmar. I used Next js and firebase for his portfolio.",
+        "This is client Yell Min Oo portfolio project. He is famous 3D charater artist from Myanmar. I used NEXT.JS and Firebase for his portfolio.",
       projectImage: "/yellminoo-client2.png",
       projectLink: "https://yellminoo.vercel.app",
     },
@@ -107,7 +107,7 @@ const Project = () => {
       id: 5,
       projectName: "Yankee Social",
       projectDetail:
-        "This is Yankee social media website. I used React js and Scss/Sass for front-end, node js and express js for backend, MongoDb for database.",
+        "This is Yankee social media website. I used ReactJS and SCSS/SASS for frontend, Note JS and Express JS for backend, MongoDB for database.",
       projectImage: "/yankee1.png",
       projectLink: "https://yankee.vercel.app",
     },

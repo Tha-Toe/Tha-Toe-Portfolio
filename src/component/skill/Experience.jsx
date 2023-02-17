@@ -39,13 +39,13 @@ function Experience() {
           mode === "light" && "light_mode_bg_white_card"
         } ${leftTrueVisible ? "eLeftAnimation" : ""}`}
       >
-        <div className="eleftHeader">Skill & Experience</div>
+        <div className="eleftHeader">Skills & Experience</div>
         <div
           className={`${"eleftNote firstE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          I started study programming(web development) since October 16, 2021.
+          I started study programming(web development) since 2021.
         </div>
         <div
           className={`${"eleftNote secondE"} ${
@@ -53,8 +53,8 @@ function Experience() {
           }`}
         >
           I'm React developer(frontend). I have hand-on experience in working
-          with semantic Html, Css, Sass/Scss, Tailwind Css, Bootstrap, Material
-          Ui Javascript, React Js, Next Js for front-end development. I learned
+          with semantic Html, CSS, SCSS/SASS, Tailwind CSS, Bootstrap, Material
+          UI JavaScript, React JS, NEXT.JS for front-end development. I learned
           Git Hub, Npm, Yarn, Restful Api, GraphQL server etc. which are
           important for developers.
         </div>
@@ -63,9 +63,9 @@ function Experience() {
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          Although I'm a front-end developer, I used to write back-end
-          development language like Node Js, Express Js. And I have used
-          database like MongoDB, Firebase, MySQL.
+          Although I'm a frontend developer, I used to write backend development
+          language like Node JS, Express JS. And I have used database like
+          MongoDB, Firebase, MySQL.
         </div>
         <div
           className={`${"eleftNote thirdE"} ${
@@ -73,12 +73,12 @@ function Experience() {
           }`}
         >
           As work experience, I had compeleted a three-month internship as a
-          front end developer in World of Professional Singapore company. And
-          I'm working as a full time developer there.
+          frontend developer in World of Professional Singapore company. And I'm
+          working as a full time developer there.
         </div>
       </div>
       <div className="eRightContainer" ref={rightRef}>
-        <div className="skillHeader">Front End Development</div>
+        <div className="skillHeader">Frontend Development</div>
         <div className="skillContainer">
           <div className="skillName html">HTML</div>
           <div className="progressContainer">
@@ -165,7 +165,7 @@ function Experience() {
           </div>
         </div>
         <div className="skillContainer">
-          <div className="skillName react">React Js</div>
+          <div className="skillName react">React JS</div>
           <div className="progressContainer">
             <div
               className={`${"progressBar"} ${"reactBar"} ${
@@ -182,7 +182,7 @@ function Experience() {
           </div>
         </div>
         <div className="skillContainer">
-          <div className="skillName next">Next Js</div>
+          <div className="skillName next">NEXT.JS</div>
           <div className="progressContainer">
             <div
               className={`${"progressBar"} ${"nextBar"} ${
@@ -198,9 +198,9 @@ function Experience() {
             </motion.div>
           </div>
         </div>
-        <div className="skillHeader">Back End Development</div>
+        <div className="skillHeader">Backend Development</div>
         <div className="skillContainer">
-          <div className="skillName node">Node Js</div>
+          <div className="skillName node">Node JS</div>
           <div className="progressContainer">
             <div
               className={`${"progressBar"} ${"nodeBar"} ${
