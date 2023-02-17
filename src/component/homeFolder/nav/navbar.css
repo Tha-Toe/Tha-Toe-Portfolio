@@ -127,10 +127,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #fff;
-  padding: 20px 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 600px;
   border-bottom: 2px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #4fe0b5, #4486dc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .humbagarList:hover {
   font-family: "Satoshi";
@@ -259,6 +265,8 @@
   .humbagarList {
     font-weight: 600;
     font-size: 17px;
-    padding: 20px 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 400px;
   }
 }
