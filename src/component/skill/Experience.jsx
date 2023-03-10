@@ -6,6 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 
+const content = {
+  p1: "I started study programming(web development) since 2021.",
+  p2: "I'm React developer(frontend). I have hand-on experience in working with semantic Html, CSS, SCSS/SASS, Tailwind CSS, Bootstrap, Material UI JavaScript, React JS, NEXT.JS for front-end development. I learned Git Hub, Npm, Yarn, Restful Api, GraphQL server etc. which are important for developers.",
+  p3: "Although I'm a frontend developer, I used to write backend development language like Node JS, Express JS. And I have used database like MongoDB, Firebase, MySQL.",
+  p4: "As work experience, I had compeleted a three-month internship as a frontend developer in World of Professional Singapore company. And I had worked 8 months as a full time developer there. And currently I'm working as a part time javascript developer at flo3 digital"
+}
+
 const scrollVariant = {
   initial: {
     rotate: 90,
@@ -45,36 +52,28 @@ function Experience() {
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          I started study programming(web development) since 2021.
+          {content.p1}
         </div>
         <div
           className={`${"eleftNote secondE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          I'm React developer(frontend). I have hand-on experience in working
-          with semantic Html, CSS, SCSS/SASS, Tailwind CSS, Bootstrap, Material
-          UI JavaScript, React JS, NEXT.JS for front-end development. I learned
-          Git Hub, Npm, Yarn, Restful Api, GraphQL server etc. which are
-          important for developers.
+          {content.p2}
         </div>
         <div
           className={`${"eleftNote thirdE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          Although I'm a frontend developer, I used to write backend development
-          language like Node JS, Express JS. And I have used database like
-          MongoDB, Firebase, MySQL.
+          {content.p3}
         </div>
         <div
           className={`${"eleftNote thirdE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          As work experience, I had compeleted a three-month internship as a
-          frontend developer in World of Professional Singapore company. And I'm
-          working as a full time developer there.
+          {content.p4}
         </div>
       </div>
       <div className="eRightContainer" ref={rightRef}>

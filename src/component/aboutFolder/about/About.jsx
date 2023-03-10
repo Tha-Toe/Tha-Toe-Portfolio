@@ -7,6 +7,12 @@ import { useInView } from "react-intersection-observer";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 
+const content = {
+  first_p: "I'm Tha Toe Saung, 20years old, junior React web developer with frontend development skills. And I have more than a year of experience.",
+  second_p: "I live in Taungoo, Bago, Myanmar. The heighest university that I attended was second year,Geography specialization of Taungoo university.",
+  third_p: "I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web development."
+}
+
 const scrollVariant = {
   initial: {
     rotate: 90,
@@ -59,19 +65,13 @@ function About() {
         <div className="aboutHead">Who I am?</div>
         <div className="aboutMe">About Me</div>
         <p className="about_text">
-          I'm Tha Toe Saung, 20years old, junior React web developer with
-          frontend development skills. And I have more than a year of
-          experience.
+          {content.first_p}
         </p>
         <p className="about_text">
-          I live in Taungoo, Bago, Myanmar. The heighest university that I
-          attended was second year,Geography specialization of Taungoo
-          university.
+          {content.second_p}
         </p>
         <p className="about_text">
-          I am passionate about leveraging my diverse backgrounds to decipher
-          challenging problems and create delightful experiences. I honed my
-          skills at web development.
+          {content.third_p}
         </p>
         <motion.button
           className="cvButton"
