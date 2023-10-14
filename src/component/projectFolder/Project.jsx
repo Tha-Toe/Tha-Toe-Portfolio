@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
+import ProjectComponent from "./ProjectComponent";
 
 const scrollVariant = {
   initial: {
@@ -33,17 +34,17 @@ const Project = () => {
 
   const { ref: cardRef, inView: siteVisible } = useInView();
 
-  useEffect(() => {
-    if (siteVisible) {
-      setCardVisible(true);
-      setCardSize(imageRef.current.offsetWidth);
-      if (hoverCardId) {
-        setCardWidth(0);
-      } else {
-        setCardWidth(imageRef.current.offsetWidth);
-      }
-    }
-  }, [siteVisible, hoverCardId]);
+  // useEffect(() => {
+  //   if (siteVisible) {
+  //     setCardVisible(true);
+  //     setCardSize(imageRef.current.offsetWidth);
+  //     if (hoverCardId) {
+  //       setCardWidth(0);
+  //     } else {
+  //       setCardWidth(imageRef.current.offsetWidth);
+  //     }
+  //   }
+  // }, [siteVisible, hoverCardId]);
 
   const mouseHoverAndLeave = ({ condition, id }) => {
     console.log(condition, id);
@@ -69,7 +70,7 @@ const Project = () => {
   //   projectImage: "/musicP.PNG",
   //   projectLink: "https://musicplay.vercel.app",
   // },
-  const [projectList, setProjectList] = useState([
+  const [projectList] = useState([
     {
       id: 1,
       projectName: "Sports Battle",
@@ -121,10 +122,62 @@ const Project = () => {
     },
   ]);
 
+  const [projectNewList] = useState([
+    {
+      id: 1,
+      projectName: "Mediclick (Philippines)",
+      projectDetail:
+        "This is Philippines Medicine E Commerce webiste. I created it in Flo3 Company. I used Saleor, NEXT.JS fullstack, Tailwind CSS, Typescript, Redis, GraphQL, OAuth, Dummy Payment, Microsoft Azure blob storage for this website stack.",
+      projectImage: "/Mediclick.png",
+      projectLink: "https://www.mediclick.ph",
+    },
+    {
+      id: 2,
+      projectName: "Liquid Collection (Hong Kong)",
+      projectDetail:
+        "This is wines website from Hong Kong. I created it in Flo3 Company. I used Saleor, NEXT.JS fullstack, Tailwind CSS, Typescript, Redis, GraphQL, Saleor Auth, Stripe payment(credit cards), Miscrosoft Azure blob storage for this website stack.  ",
+      projectImage: "/LiquidCollection.png",
+      projectLink: "https://www.liquidcollectionhk.com",
+    },
+    {
+      id: 3,
+      projectName: "Sports Battle",
+      projectDetail:
+        "Sports Battle is the company project. It is a sports website. Type user name as hello and password as 123 to log in. I use Material Ui + React to build that website. This is the most complicated website I have ever worked",
+        projectImage: "/SportBattle.png",
+        projectLink: "https://sports-battle-final.netlify.app",
+    },
+    {
+      id: 4,
+      projectName: "Music World",
+      projectDetail:
+        "This is my own music player web application. You can play,save and upload song free. I hope you enjoy it",
+      projectImage: "/MusicWorld.png",
+      projectLink: "https://music-world-web.vercel.app",
+    },
+    {
+      id: 5,
+      projectName: "Koin Wise",
+      projectDetail:
+        "Koin Wise is company project. I used React JS to build it.",
+      projectImage: "/Koinwise.png",
+      projectLink: "https://koinwise.netlify.app",
+    },
+
+    {
+      id: 6,
+      projectName: "Weather Project",
+      projectDetail:
+        "This is weather project. I used open weather api to create it. You can find any city name and you can save. Default city is Mandalay",
+      projectImage: "/WeatherLive.png",
+      projectLink: "https://weatherliveapp.vercel.app",
+    },
+  ]);
+
   return (
     <div className="projectContainer" id="project">
       <div className="projectHeader">My Projects (6)</div>
-      <div className="projectList" ref={cardRef}>
+      {/* <div className="projectList" ref={cardRef}>
         {projectList.map((each, index) => (
           <div
             key={index}
@@ -175,6 +228,13 @@ const Project = () => {
             ></div>
           </div>
         ))}
+      </div> */}
+      <div className="projectListNew">
+        {
+          projectNewList.map((each,index) => 
+            <ProjectComponent project={each} index={index} key={index}/>
+          )
+        }
       </div>
       <motion.div
         variants={scrollVariant}

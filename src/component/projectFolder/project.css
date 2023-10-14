@@ -140,6 +140,18 @@
   cursor: pointer;
 }
 
+
+
+.projectListNew {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
 @media (max-width: 1005px) {
 }
 

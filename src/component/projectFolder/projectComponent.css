@@ -1,0 +1,253 @@
+.projectNew {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+    cursor: pointer;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    width: 70%;
+    height: 400px;
+    max-height: 400px;
+    background-color: #2b2b2b;
+    position: relative;
+}
+
+.projectNew:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.projectImageNew {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2b2b2b;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+
+  .projectName {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .projectName2 {
+    margin-top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .projectDetailNew {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 70%;
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .projectButton {
+    color: #fff;
+    border: none;
+    background: linear-gradient(90deg, #a730aa, #5b46a8);
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .hoverLeftNew {
+    background-color: #b531b8;
+    background-color: rgba(181, 49, 184, 0.9);
+    /*    background-color: rgb(255, 92, 63, 0.9); */
+    height: 1000px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(-30deg) translateX(-500px) translateY(-90px);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+  }
+  .hoverRightNew {
+    background-color: #674dc7;
+    background-color: rgba(103, 77, 199, 0.8);
+    /*    background-color: rgb(255, 92, 63, 0.9); */
+    height: 1000px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(-30deg) translateX(500px) translateY(-90px);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+  }
+  
+  .hoverLeftNewStart {
+    transform: rotate(-30deg) translateX(500px) translateY(-90px);
+  }
+  
+  .hoverRightNewStart {
+    transform: rotate(-30deg) translateX(-500px) translateY(-90px);
+  }
+
+
+  @media (max-width: 1000px) {
+    .projectNew {
+        width: 80%;
+    }
+  }
+
+  @media (max-width: 700px) {
+  
+    .projectNew {
+        height: 300px;
+        max-height: 300px;
+        width: 80%;
+    }
+    .projectName {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .projectName2 {
+        margin-top: -10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .projectDetailNew {
+        font-size: 14px;
+        margin-bottom: 30px;
+        max-width: 70%;
+        /* text-align: center; */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .projectButton {
+        font-size: 14px;
+      }
+    .hoverLeftNew {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(-370px) translateY(-90px);
+    }
+    .hoverRightNew {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(370px) translateY(-90px);
+    }
+  
+    .hoverLeftNewStart {
+      transform: rotate(-30deg) translateX(370px) translateY(-90px);
+    }
+  
+    .hoverRightNewStart {
+      transform: rotate(-30deg) translateX(-370px) translateY(-90px);
+    }
+  }
+  @media (max-width: 500px) {
+    .projectNew {
+        height: 200px;
+        max-height: 200px;
+        width: 100%;
+        border-top-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+    .projectName {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      
+      .projectDetailNew {
+        font-size: 12px;
+        margin-bottom: 10px;
+        max-width: 80%;
+        /* text-align: center; */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .projectButton {
+        padding: 8px 10px;
+        font-size: 10px;
+      }
+    .hoverLeftNew {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(-300px) translateY(-90px);
+    }
+    .hoverRightNew {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(300px) translateY(-90px);
+    }
+  
+    .hoverLeftNewStart {
+      transform: rotate(-30deg) translateX(300px) translateY(-90px);
+    }
+  
+    .hoverRightNewStart {
+      transform: rotate(-30deg) translateX(-300px) translateY(-90px);
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .projectNew {
+        height: 150px;
+        max-height: 150px;
+        width: 100%;
+    }
+    .projectName {
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .projectDetailNew {
+        font-size: 10px;
+        margin-bottom: 10px;
+        max-width: 80%;
+        /* text-align: center; */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .projectButton {
+        padding: 8px 10px;
+        font-size: 10px;
+      }
+    .hoverLeftNew {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(-250px) translateY(-90px);
+    }
+    .hoverRightNew {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(250px) translateY(-90px);
+    }
+  
+    .hoverLeftNewStart {
+      transform: rotate(-30deg) translateX(250px) translateY(-90px);
+    }
+    .hoverRightNewStart {
+      transform: rotate(-30deg) translateX(-250px) translateY(-90px);
+    }
+  }
