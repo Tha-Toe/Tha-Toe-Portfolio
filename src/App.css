@@ -1,7 +1,7 @@
-.body {
+body {
   background: #061222;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .bodyContainer {
   max-width: 1200px;

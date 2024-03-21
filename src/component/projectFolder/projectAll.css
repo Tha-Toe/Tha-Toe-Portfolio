@@ -1,0 +1,283 @@
+.projectContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  .projectAllContainer{
+    background: #061222;
+}
+  .projectHeader {
+    color: #fff;
+    color: #ff5d40;
+    font-family: Century Gothic;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: "Caveat", cursive;
+    background: linear-gradient(93.25deg, #4486dc 9.29%, #4fe0b5 75.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .projectList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  .project {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+    cursor: pointer;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+  }
+  
+  .project::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .projectHover {
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hoverLeft {
+    background-color: #b531b8;
+    background-color: rgba(181, 49, 184, 0.9);
+    /*    background-color: rgb(255, 92, 63, 0.9); */
+    height: 700px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(-30deg) translateX(-320px) translateY(-90px);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+  }
+  .hoverRight {
+    background-color: #674dc7;
+    background-color: rgba(103, 77, 199, 0.8);
+    /*    background-color: rgb(255, 92, 63, 0.9); */
+    height: 700px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(-30deg) translateX(440px) translateY(-90px);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+  }
+  
+  .hoverLeftStart {
+    transform: rotate(-30deg) translateX(440px) translateY(-90px);
+  }
+  
+  .hoverRightStart {
+    transform: rotate(-30deg) translateX(-320px) translateY(-90px);
+  }
+  
+  .projectImg {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+  }
+  
+  .pOneAnimation {
+    position: relative;
+    animation: pOne 0.5s ease-in;
+  }
+  
+  @keyframes pOne {
+    0% {
+      opacity: 0;
+      left: -200px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  
+  .projectName {
+    color: #fff;
+    font-family: Century Gothic;
+    font-size: 23px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .projectName2 {
+    margin-top: -10px;
+  }
+  
+  .projectDetail {
+    font-size: 18px;
+    font-family: Century Gothic;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+  
+  .projectButton {
+    color: #fff;
+    border: none;
+    background: linear-gradient(90deg, #a730aa, #5b46a8);
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .marginTop{
+    margin-top: 50px;
+  }
+  
+  .projectListNew {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  @media (max-width: 1005px) {
+    .projectContainer{
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .projectContainer {
+    }
+  
+    .project {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      box-shadow: 2px 2px 10px -7px #000, -2px -2px 10px -7px #000;
+      cursor: pointer;
+    }
+    .projectImg {
+      width: 350px;
+      height: 350px;
+    }
+    .hoverLeft {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(-190px) translateY(-90px);
+    }
+    .hoverRight {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(460px) translateY(-90px);
+    }
+  
+    .hoverLeftStart {
+      transform: rotate(-30deg) translateX(460px) translateY(-90px);
+    }
+  
+    .hoverRightStart {
+      transform: rotate(-30deg) translateX(-190px) translateY(-90px);
+    }
+  }
+  @media (max-width: 500px) {
+    .projectImg {
+      width: 300px;
+      height: 300px;
+    }
+    .projectList {
+      margin-top: 50px;
+    }
+    .projectName {
+      font-size: 18px;
+      font-weight: 600;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .projectButton {
+      background: linear-gradient(90deg, #a730aa, #5b46a8);
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .projectDetail {
+      font-size: 14px;
+      margin-bottom: 25px;
+      width: 70%;
+    }
+    .hoverLeft {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(-150px) translateY(-90px);
+    }
+    .hoverRight {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(455px) translateY(-90px);
+    }
+  
+    .hoverLeftStart {
+      transform: rotate(-30deg) translateX(455px) translateY(-90px);
+    }
+  
+    .hoverRightStart {
+      transform: rotate(-30deg) translateX(-150px) translateY(-90px);
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .projectImg {
+      width: 250px;
+      height: 250px;
+    }
+    .projectList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hoverLeft {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(-110px) translateY(-90px);
+    }
+    .hoverRight {
+      height: 900px;
+      position: absolute;
+      transform: rotate(-30deg) translateX(435px) translateY(-90px);
+    }
+  
+    .hoverLeftStart {
+      transform: rotate(-30deg) translateX(435px) translateY(-90px);
+    }
+    .hoverRightStart {
+      transform: rotate(-30deg) translateX(-110px) translateY(-90px);
+    }
+    .projectName {
+      margin-bottom: 15px;
+    }
+    .projectDetail {
+      margin-bottom: 10px;
+    }
+  }
+  

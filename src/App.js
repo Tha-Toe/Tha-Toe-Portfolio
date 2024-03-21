@@ -12,6 +12,8 @@ import { Routes, Route } from "react-router-dom";
 import Thankyou from "./Thankyou";
 import { useDispatch, useSelector } from "react-redux";
 import { changeModeWithColor } from "./store/slice";
+import ProjectAll from "./component/projectFolder/ProjectAll";
+
 function App() {
   const [introShow, setIntroShow] = useState(true);
   const dispatch = useDispatch();
@@ -63,6 +65,7 @@ function App() {
             }
           />
           <Route path="/thankyou" element={<Thankyou />} />
+          <Route path="/projects" element={<ProjectAll />} />
         </Routes>
       </AnimatePresence>
     </>

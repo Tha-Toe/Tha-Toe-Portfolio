@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./project.css";
+import "./projectAll.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,8 +20,8 @@ const scrollVariant = {
   },
 };
 
-const Project = () => {
-  const mode = useSelector((state) => state.mode.mode);
+const ProjectAll = () => {
+  const mode = "dark";
   const [hoverCardId, setHoverCardId] = useState(null);
 
   const imageRef = useRef();
@@ -140,6 +140,14 @@ const Project = () => {
       projectLink: "https://www.liquidcollectionhk.com",
     },
     {
+      id: 2,
+      projectName: "Electric Soul",
+      projectDetail:
+        "This is ticket sale website from Hong Kong. I created it in Flo3 Company. I used Saleor, NEXT.JS fullstack, Tailwind CSS, Typescript, Redis, GraphQL, Saleor Auth, Stripe payment(credit cards), Miscrosoft Azure blob storage for this website stack.  ",
+      projectImage: "/electricSoul.png",
+      projectLink: "https://electric-soul-v2-ui.vercel.app/",
+    },
+    {
       id: 3,
       projectName: "Sports Battle",
       projectDetail:
@@ -175,8 +183,8 @@ const Project = () => {
   ]);
 
   return (
-    <div className="projectContainer" id="project">
-      <div className="projectHeader">My Fav Projects (6)</div>
+    <div className="projectContainer projectAllContainer" id="project">
+      <div className="projectHeader">My All Projects ({projectNewList.length})</div>
       {/* <div className="projectList" ref={cardRef}>
         {projectList.map((each, index) => (
           <div
@@ -229,10 +237,10 @@ const Project = () => {
           </div>
         ))}
       </div> */}
-      <a href="/projects">
+      <a href="/">
         <button className={`${"sendButton"} ${"marginTop"}`}>
           <FontAwesomeIcon icon={faMagnifyingGlass} className="buttonIcon" />{" "}
-                  See All projects{" "}
+                  Go Back{" "}
         </button>
       </a>
       <div className="projectListNew">
@@ -242,10 +250,10 @@ const Project = () => {
           )
         }
       </div>
-      <a href="/projects">
+      <a href="/">
         <button className="sendButton">
                   <FontAwesomeIcon icon={faMagnifyingGlass} className="buttonIcon" />{" "}
-                  See All projects{" "}
+                  Go Back{" "}
         </button>     
 </a>
     <motion.div
@@ -286,4 +294,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectAll;

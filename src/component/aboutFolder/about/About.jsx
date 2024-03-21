@@ -6,12 +6,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
+import content from "../../../lib/content.json";
 
-const content = {
-  first_p: "I'm Tha Toe Saung, 20years old, junior React web developer with frontend development skills. And I have more than a year of experience.",
-  second_p: "I live in Taungoo, Bago, Myanmar. The heighest university that I attended was second year,Geography specialization of Taungoo university.",
-  third_p: "I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web development."
-}
 
 const scrollVariant = {
   initial: {
@@ -43,6 +39,14 @@ function About() {
     }
   }, [leftVisible, rightVisible]);
 
+  const currentYear = new Date().getFullYear();
+  const myBirth = 2002;
+  const myAge = currentYear - myBirth;
+  const firstPWithAge  = content.aboutMe.first_p.replace('{age}', myAge);
+  const started = 2021;
+  const exp = currentYear - started;
+  const firstP = firstPWithAge.replace('{experience}', exp);
+
   return (
     <div className="aboutContainer" id="about">
       <div
@@ -65,13 +69,13 @@ function About() {
         <div className="aboutHead">Who I am?</div>
         <div className="aboutMe">About Me</div>
         <p className="about_text">
-          {content.first_p}
+          {firstP}
         </p>
         <p className="about_text">
-          {content.second_p}
+          {content.aboutMe.second_p}
         </p>
         <p className="about_text">
-          {content.third_p}
+          {content.aboutMe.third_p}
         </p>
         <motion.button
           className="cvButton"

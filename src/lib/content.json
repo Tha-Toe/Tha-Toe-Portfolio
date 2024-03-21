@@ -1,0 +1,56 @@
+{
+    "aboutMe": {
+        "first_p": "I'm Tha Toe Saung, {age} years old, junior React web developer with frontend development skills. And I have more than {experience} years of experience.",
+        "second_p": "I live in Taungoo, Bago, Myanmar. The heighest university that I attended was second year,Geography specialization of Taungoo university.",
+        "third_p": "I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web development."
+    },
+    "skill":{
+        "p1": "I started study programming(web development) since 2021.",
+        "p2": "I'm Next JS developer. I have hand-on experience in working with semantic Html, CSS, SCSS/SASS, Tailwind CSS, Bootstrap, Material UI JavaScript, React JS, NEXT.JS. I learned Git Hub, Npm, Yarn, Restful Api, GraphQL server etc, which are important for developers.",
+        "p3": "Although I'm a frontend developer, I used to write backend development language like Node JS, Express JS. And I have used database like MongoDB, Firebase, MySQL.",
+        "p4": "As work experience, I have over {experience} years realworld experience, I had compeleted a three-month internship as a frontend developer in World of Professional Singapore company. And I had worked 8 months as a full time developer there. And currently I'm working as a fulltime NEXT JS developer at Flo3 UK company."
+    },
+    "skills": [
+        {
+            "header": "Frontend Development:",
+            "content": [
+                "Proficient in Next.js and React for building efficient and scalable frontend applications.",
+                "Experienced in using TypeScript for static typing and improved code quality.",
+                "Familiarity with Node.js and Express.js for server-side rendering and backend development."
+            ]
+        },        {
+            "header": "API Development:",
+            "content": [
+                "Proficient in GraphQL for efficient data fetching and manipulation.",
+                "Experienced in generating types and queries with GraphQL Codegen for streamlined development.",
+                "Familiar with Apollo and Urql for GraphQL client-side management.",
+                "Experienced in building and consuming RESTful APIs for data exchange."
+            ]
+        },
+        {
+            "header": "Database Management:",
+            "content": [
+                "Experience working with various databases including Firebase, PostgreSQL, MongoDB, Redis, and Microsoft Azure Storage.",
+                "Skilled in database design, optimization, and management for scalable applications."            ]
+        },
+        {
+            "header": "E-commerce Platforms:",
+            "content": [
+                "Hands-on experience with Saleor E-commerce and Medusa E-commerce for building robust online shopping experiences.",
+                "Proficient in integrating and customizing e-commerce solutions to meet client requirements."
+            ]
+        },        {
+            "header": "Content Management Systems:",
+            "content": [
+                "Utilized Builder.io for designing and managing dynamic and customizable frontend content."
+            ]
+        },       {
+            "header": "Communication & Integration:",
+            "content": [
+                "Integrated email services such as SendGrid and Twilio for efficient communication and notification systems.",
+                "Proficient in debugging and error tracking using Sentry to ensure application stability and performance."
+            ]
+        }
+    ]
+    
+}

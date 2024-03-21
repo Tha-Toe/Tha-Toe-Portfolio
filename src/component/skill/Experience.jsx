@@ -5,13 +5,9 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
+import content from "../../lib/content.json"
+import SkillCard from "./SkillCard";
 
-const content = {
-  p1: "I started study programming(web development) since 2021.",
-  p2: "I'm Next JS developer. I have hand-on experience in working with semantic Html, CSS, SCSS/SASS, Tailwind CSS, Bootstrap, Material UI JavaScript, React JS, NEXT.JS. I learned Git Hub, Npm, Yarn, Restful Api, GraphQL server etc, which are important for developers.",
-  p3: "Although I'm a frontend developer, I used to write backend development language like Node JS, Express JS. And I have used database like MongoDB, Firebase, MySQL.",
-  p4: "As work experience, I have over a year realworld experience, I had compeleted a three-month internship as a frontend developer in World of Professional Singapore company. And I had worked 8 months as a full time developer there. And currently I'm working as a fulltime NEXT JS developer at Flo3 UK company."
-}
 
 const scrollVariant = {
   initial: {
@@ -37,44 +33,51 @@ function Experience() {
       setLeftTrueVisible(true);
     }
   }, [leftVisible]);
-
+  const currentYear = new Date().getFullYear();
+  const myBirth = 2022;
+  const exp = currentYear - myBirth;
+  const p4  = content.skill.p4.replace('{experience}', exp);
   return (
     <div className="experienceContainer" id="skill">
+
       <div
         ref={leftRef}
-        className={`${"eLeftContainer"} ${
-          mode === "light" && "light_mode_bg_white_card"
-        } ${leftTrueVisible ? "eLeftAnimation" : ""}`}
+        className={`${"eLeftContainer"} ${leftTrueVisible ? "eLeftAnimation" : ""}`}
       >
-        <div className="eleftHeader">Skills & Experience</div>
-        <div
+        <div className="eleftHeader">My Skills & Experience</div>
+        {
+          content.skills.map((skill,index) => 
+            <SkillCard key={index} skill={skill} mode={mode} index={index}/>
+          )
+        }
+        {/* <div
           className={`${"eleftNote firstE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          {content.p1}
+          {content.skill.p1}
         </div>
         <div
           className={`${"eleftNote secondE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          {content.p2}
+          {content.skill.p2}
         </div>
         <div
           className={`${"eleftNote thirdE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          {content.p3}
+          {content.skill.p3}
         </div>
         <div
           className={`${"eleftNote thirdE"} ${
             mode === "light" && "light_mode_color_black"
           }`}
         >
-          {content.p4}
-        </div>
+          {p4}
+        </div> */}
       </div>
       <div className="eRightContainer" ref={rightRef}>
         <div className="skillHeader">Frontend Development</div>
