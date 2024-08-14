@@ -144,7 +144,7 @@ const ProjectAll = () => {
       projectName: "Electric Soul",
       projectDetail:
         "This is ticket sale website from Hong Kong. I created it in Flo3 Company. I used Saleor, NEXT.JS fullstack, Tailwind CSS, Typescript, Redis, GraphQL, Saleor Auth, Stripe payment(credit cards), Miscrosoft Azure blob storage for this website stack.  ",
-      projectImage: "/electricSoul.png",
+      projectImage: "/electricsoul.png",
       projectLink: "https://www.electricsoul.com",
     },
     {
