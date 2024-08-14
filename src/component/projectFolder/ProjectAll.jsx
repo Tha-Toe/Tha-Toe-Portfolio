@@ -145,7 +145,7 @@ const ProjectAll = () => {
       projectDetail:
         "This is ticket sale website from Hong Kong. I created it in Flo3 Company. I used Saleor, NEXT.JS fullstack, Tailwind CSS, Typescript, Redis, GraphQL, Saleor Auth, Stripe payment(credit cards), Miscrosoft Azure blob storage for this website stack.  ",
       projectImage: "/electricSoul.png",
-      projectLink: "https://electric-soul-v2-ui.vercel.app/",
+      projectLink: "https://www.electricsoul.com",
     },
     {
       id: 3,
@@ -171,9 +171,26 @@ const ProjectAll = () => {
       projectImage: "/Koinwise.png",
       projectLink: "https://koinwise.netlify.app",
     },
-
     {
       id: 6,
+      projectName: "BEA & ME",
+      projectDetail:
+        "BEA&ME is skin care products website from Hong Kong. I created it in Flo3 Company. I used Shopify, Liquid, HTML, CSS, JavaScript, Animation, Mobile Responsive for this website stack.",
+      projectImage: "/BeaAndMe.png",
+      projectLink: "https://123b1c.myshopify.com/",
+    },
+    {
+      id: 7,
+      projectName: "Karzo",
+      projectDetail:
+        "Karzo is committed to aggregating and managing fleet suppliers on their digital platform across the region. I created it in Flo3 Company. I used Next JS, Builder.io, Odoo ( Python ), Tailwind CSS, Typescript, Framer Motion.",
+      projectImage: "/karzo.png",
+      projectLink: "https://www.karzo.com",
+    },
+
+    
+    {
+      id: 8,
       projectName: "Weather Project",
       projectDetail:
         "This is weather project. I used open weather api to create it. You can find any city name and you can save. Default city is Mandalay",
@@ -185,58 +202,6 @@ const ProjectAll = () => {
   return (
     <div className="projectContainer projectAllContainer" id="project">
       <div className="projectHeader">My All Projects ({projectNewList.length})</div>
-      {/* <div className="projectList" ref={cardRef}>
-        {projectList.map((each, index) => (
-          <div
-            key={index}
-            className={`${"project"} ${cardVisible ? "pOneAnimation" : ""}`}
-            onMouseEnter={() => {
-              mouseHoverAndLeave({ condition: true, id: each.id });
-            }}
-            onMouseLeave={() => {
-              mouseHoverAndLeave({ condition: false, id: each.id });
-            }}
-          >
-            <div
-              className="projectHover"
-              style={{
-                width: `${cardSize}px`,
-                height: `${cardSize}px`,
-                position: "absolute",
-                zIndex: 1,
-                transform: `translateX(-${
-                  hoverCardId === each.id ? cardWidth : cardSize
-                }px)`,
-                transition: `all .4s ease`,
-              }}
-            >
-              <div className="projectName">{each.projectName}</div>
-              <div className="projectName projectName2">
-                {each.projectName2}
-              </div>
-              <div className="projectDetail">{each.projectDetail}</div>
-              <a href={each.projectLink} target="_blank">
-                <button className="projectButton">Go to website</button>
-              </a>
-            </div>
-            <div
-              className={`${"hoverLeft"} ${
-                hoverCardId === each.id ? "hoverLeftStart" : ""
-              }`}
-            ></div>
-            <img
-              src={each.projectImage}
-              className="projectImg imgOne"
-              ref={imageRef}
-            />
-            <div
-              className={`${"hoverRight"} ${
-                hoverCardId === each.id ? "hoverRightStart" : ""
-              }`}
-            ></div>
-          </div>
-        ))}
-      </div> */}
       <a href="/">
         <button className={`${"sendButton"} ${"marginTop"}`}>
           <FontAwesomeIcon icon={faMagnifyingGlass} className="buttonIcon" />{" "}

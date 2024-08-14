@@ -1,14 +1,14 @@
 {
     "aboutMe": {
-        "first_p": "I'm Tha Toe Saung, {age} years old, junior React web developer with frontend development skills. And I have more than {experience} years of experience.",
-        "second_p": "I live in Taungoo, Bago, Myanmar. The heighest university that I attended was second year,Geography specialization of Taungoo university.",
+        "first_p": "I'm Tha Toe Saung, {age} years old, Frontend Lead developer. And I have more than {experience} years of experience.",
+        "second_p": "I live in Bangkok, Thailand. The heighest university that I attended was second year,Geography specialization of Taungoo university.",
         "third_p": "I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web development."
     },
     "skill":{
         "p1": "I started study programming(web development) since 2021.",
         "p2": "I'm Next JS developer. I have hand-on experience in working with semantic Html, CSS, SCSS/SASS, Tailwind CSS, Bootstrap, Material UI JavaScript, React JS, NEXT.JS. I learned Git Hub, Npm, Yarn, Restful Api, GraphQL server etc, which are important for developers.",
         "p3": "Although I'm a frontend developer, I used to write backend development language like Node JS, Express JS. And I have used database like MongoDB, Firebase, MySQL.",
-        "p4": "As work experience, I have over {experience} years realworld experience, I had compeleted a three-month internship as a frontend developer in World of Professional Singapore company. And I had worked 8 months as a full time developer there. And currently I'm working as a fulltime NEXT JS developer at Flo3 UK company."
+        "p4": "As work experience, I have over {experience} years realworld experience, I had compeleted a three-month internship as a frontend developer in World of Professional Singapore company. And I had worked 8 months as a full time developer there. And currently I'm working as a Frontend Lead developer at Flo3 UK company."
     },
     "skills": [
         {
